@@ -7,8 +7,12 @@ fs.readFile('data.min.json', 'utf8', (err, data) => {
   const json = JSON.parse(data)
   // console.log(json)
   const test = json.map((item) => {
+    const encodedName = item.name
+      .replace(/-/g, '--')
+      .replace(/_/g, '__')
+      .replace(/ /g, '_')
     const src = encodeURI(
-      `https://img.shields.io/badge/${item.name} -#${item.hex}.svg?&style=for-the-badge&logo=${item.name}&logoColor=white`
+      `https://img.shields.io/badge/${encodedName} -#${item.hex}.svg?&style=for-the-badge&logo=${item.name}&logoColor=white`
     ).replace('#', '%23')
     return {
       Name: item.name,
