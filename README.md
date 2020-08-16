@@ -14,7 +14,7 @@ yarn add react-simple-badges
 
 ## What is this Component library?
 
-A set of Components that are auto generated from simpleicons.org list of badges from shields.io. A github action is run every 24 hours checking if the list has been updated and will automatically update the index.tsx with the new components and be published to npm with a new version number. Any props passed to the component get passed along to the img element in it so things like style can be applied easily.
+A set of Components that are auto generated from simpleicons.org list of icons using shields.io badges. A github action is run every 24 hours checking if the list has been updated and will automatically update the Badge component with the new badges and be published to npm with a new version number. Any props passed to the component get passed along to the img element in it so things like style can be applied easily.
 
 ## Usage
 
@@ -36,6 +36,8 @@ const App = () => {
 
 export default App
 ```
+[Example project on stackblitz.com](https://stackblitz.com/edit/react-ejp4ec?embed=1&file=src/App.js&hideExplorer=1&hideNavigation=1&view=preview)
+
 
 
 ### Badges
@@ -1300,6 +1302,7 @@ export default App
 | TYPO3                        | <img src="https://img.shields.io/badge/TYPO3%20-%23FF8700.svg?&style=for-the-badge&logo=TYPO3&logoColor=white"/>                                                                   | ```<Badge name="TYPO3" />```                        |
 | Uber                         | <img src="https://img.shields.io/badge/Uber%20-%23000000.svg?&style=for-the-badge&logo=Uber&logoColor=white"/>                                                                     | ```<Badge name="Uber" />```                         |
 | Uber Eats                    | <img src="https://img.shields.io/badge/Uber_Eats%20-%235FB709.svg?&style=for-the-badge&logo=Uber%20Eats&logoColor=white"/>                                                         | ```<Badge name="Uber Eats" />```                    |
+| Ubiquiti                     | <img src="https://img.shields.io/badge/Ubiquiti%20-%230559C9.svg?&style=for-the-badge&logo=Ubiquiti&logoColor=white"/>                                                             | ```<Badge name="Ubiquiti" />```                     |
 | Ubisoft                      | <img src="https://img.shields.io/badge/Ubisoft%20-%23000000.svg?&style=for-the-badge&logo=Ubisoft&logoColor=white"/>                                                               | ```<Badge name="Ubisoft" />```                      |
 | uBlock Origin                | <img src="https://img.shields.io/badge/uBlock_Origin%20-%23800000.svg?&style=for-the-badge&logo=uBlock%20Origin&logoColor=white"/>                                                 | ```<Badge name="uBlock Origin" />```                |
 | Ubuntu                       | <img src="https://img.shields.io/badge/Ubuntu%20-%23E95420.svg?&style=for-the-badge&logo=Ubuntu&logoColor=white"/>                                                                 | ```<Badge name="Ubuntu" />```                       |
