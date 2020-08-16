@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Badge from 'react-clean-badges'
+import Badge from 'react-simple-badges'
 
 const App = () => {
   return (

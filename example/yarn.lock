@@ -8616,7 +8616,7 @@ react-app-polyfill@^1.0.6:
     regenerator-runtime "^0.13.3"
     whatwg-fetch "^3.0.0"
 
-"react-clean-badges@link:..":
+"react-simple-badges@link:..":
   version "0.0.0"
   uid ""
 

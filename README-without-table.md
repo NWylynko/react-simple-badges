@@ -1,15 +1,15 @@
-# react-clean-badges
+# react-simple-badges
 
 > React badges for your Profile and Projects.
 
 ## Install
 
 ```bash
-npm i react-clean-badges
+npm i react-simple-badges
 ```
 
 ```bash
-yarn add react-clean-badges
+yarn add react-simple-badges
 ```
 
 ## What is this Component library?
@@ -21,7 +21,7 @@ A set of Components that are auto generated from simpleicons.org list of badges 
 ```tsx
 import React from 'react'
 
-import Badge from 'react-clean-badges'
+import Badge from 'react-simple-badges'
 
 const App = () => {
   return (
