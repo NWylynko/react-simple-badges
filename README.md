@@ -2,27 +2,41 @@
 
 > React badges for your Profile and Projects.
 
-[![NPM](https://img.shields.io/npm/v/react-clean-badges.svg)](https://www.npmjs.com/package/react-clean-badges) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+using https://github.com/Ileriayo/markdown-badges
 
 ## Install
 
 ```bash
-npm install --save react-clean-badges
+npm i react-clean-badges
+```
+
+```bash
+yarn add react-clean-badges
 ```
 
 ## Usage
 
 ```tsx
-import React, { Component } from 'react'
+import React from 'react'
 
-import MyComponent from 'react-clean-badges'
-import 'react-clean-badges/dist/index.css'
+import Badge, {ExpressjsBadge, DigitalOceanBadge, ReactBadge} from 'react-clean-badges'
 
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
+const App = () => {
+  return (
+    <>
+      <Badge.Nodejs style={{width: 200}} />
+      <Badge.JavaScript />
+      <Badge.TypeScript style={{borderRadius: 10}} />
+      <Badge.React />
+      <ReactBadge />
+      <ExpressjsBadge style={{padding: 15}} />
+      <DigitalOceanBadge />
+
+    </>
+  )
 }
+
+export default App
 ```
 
 ## License

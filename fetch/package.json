@@ -1,0 +1,10 @@
+{
+  "name": "fetch",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "markdown-tables-to-json": "^0.1.4",
+    "node-fetch": "^2.6.0"
+  }
+}
