@@ -1,6 +1,6 @@
 {
 	"name": "react-clean-badges",
-	"version": "1.0.1",
+	"version": "1.1.1",
 	"description": "React badges for your Profile and Projects.",
 	"author": "NWylynko",
 	"license": "MIT",
@@ -22,7 +22,8 @@
 		"test:watch": "react-scripts test --env=jsdom",
 		"install-fetch-dependencies": "cd fetch && yarn",
 		"get-markdown": "cd fetch && node get-file.js",
-		"build-index": "cd fetch && node app.js"
+		"build-index": "cd fetch && node app.js",
+		"build-readme": "cd fetch && node generate-markdown.js"
 	},
 	"peerDependencies": {
 		"react": "^16.0.0"

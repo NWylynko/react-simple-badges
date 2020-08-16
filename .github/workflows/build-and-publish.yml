@@ -17,6 +17,7 @@ jobs:
           node-version: 14
       - run: yarn install-fetch-dependencies
       - run: yarn get-markdown
+      - run: yarn build-readme
       - uses: EndBug/add-and-commit@v4
         with:
           author_name: Auto Builder

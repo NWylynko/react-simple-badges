@@ -13,12 +13,7 @@ fs.readFile('markdown.md', 'utf8', (err, data) => {
   const body = Extractor.extractAllObjects(data)
   body.forEach((list) => {
     Object.keys(list).map((item) => {
-      const functionName = UpperCaseFirst(
-        item
-          .replace(/[. ]/g, '')
-          .replace(/[+]/g, 'plus')
-          .replace(/[#]/g, 'sharp')
-      )
+      const functionName = convertToFunctionName(item)
       Badge += `\t${functionName}: (props) => ${list[item].Name.replace(
         '/>',
         ' {...props} />'
@@ -41,3 +36,11 @@ fs.readFile('markdown.md', 'utf8', (err, data) => {
 function UpperCaseFirst(string) {
   return string.charAt(0).toUpperCase() + string.slice(1)
 }
+
+function convertToFunctionName(item) {
+  return UpperCaseFirst(
+    item.replace(/[. ]/g, '').replace(/[+]/g, 'plus').replace(/[#]/g, 'sharp')
+  )
+}
+
+exports.convertToFunctionName = convertToFunctionName
