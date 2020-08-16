@@ -4,7 +4,6 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "markdown-tables-to-json": "^0.1.4",
     "node-fetch": "^2.6.0",
     "tablemark": "^2.0.0"
   }

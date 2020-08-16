@@ -2,29 +2,44 @@ const fetch = require('node-fetch')
 const fs = require('fs')
 
 const url =
-  'https://raw.githubusercontent.com/Ileriayo/markdown-badges/master/README.md'
+  'https://raw.githubusercontent.com/simple-icons/simple-icons/develop/_data/simple-icons.json'
 
 fetch(url)
-  .then((res) => res.text())
-  .then((file) => {
-    fs.readFile('markdown.md', 'utf8', (err, data) => {
+  .then((res) => res.json())
+  .then((json) => json.icons)
+  .then((newData) => {
+    fs.readFile('data.json', 'utf8', (err, oldData) => {
+      oldData = JSON.parse(oldData)
       if (err) {
         // if there is an error with the old file just replace it and continue
         console.error(err)
-        fs.writeFileSync('markdown.md', file)
+        saveData(newData)
         bumpVersion()
-      } else if (data === file) {
+      } else if (oldData === newData) {
         // exit if the file hasnt changed
         console.log('file hasnt changed')
         process.exit(1)
       } else {
         // write the new file for later and continue
         console.log('file has changed')
-        fs.writeFileSync('markdown.md', file)
+        saveData(newData)
         bumpVersion()
       }
     })
   })
+
+function saveData(newData) {
+  const data = newData.map((item) => {
+    return { name: item.title, hex: item.hex }
+  })
+  const dataObject = {}
+  newData.forEach((item) => {
+    dataObject[item.title] = item.hex
+  })
+  fs.writeFileSync('data.json', JSON.stringify(newData))
+  fs.writeFileSync('data.min.json', JSON.stringify(data))
+  fs.writeFileSync('../src/data.json', JSON.stringify(dataObject))
+}
 
 function bumpVersion() {
   fs.readFile('../package.json', 'utf8', (err, data) => {
