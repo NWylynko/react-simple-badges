@@ -1,11 +1,8 @@
-name: build & publish
+name: auto build & publish
 
 on:
   schedule:
     - cron: "0 0 * * *"
-  push:
-    branches:
-      - master
 
 jobs:
   build:

@@ -1,0 +1,20 @@
+name: build & publish on push
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - uses: actions/setup-node@master
+        with:
+          node-version: 14
+      - run: yarn install
+      - run: yarn test
+      - run: yarn publish
+        env:
+          NPM_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
