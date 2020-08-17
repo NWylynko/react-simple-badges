@@ -1,6 +1,8 @@
 # react-simple-badges
 
-> React badges for your Profile and Projects.
+React badges for your Profile and Projects.
+
+[![NPM](https://nodei.co/npm/react-simple-badges.png)](https://www.npmjs.com/package/react-simple-badges)
 
 ## Install
 
