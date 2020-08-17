@@ -1,4 +1,6 @@
 # react-simple-badges
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FNWylynko%2Freact-simple-badges.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FNWylynko%2Freact-simple-badges?ref=badge_shield)
+
 
 > React badges for your Profile and Projects.
 
@@ -1447,3 +1449,7 @@ export default App
 | Zulip                        | <img src="https://img.shields.io/badge/Zulip%20-%2352C2AF.svg?&style=for-the-badge&logo=Zulip&logoColor=white"/>                                                                   | ```<Badge name="Zulip" />```                        |
 
 
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FNWylynko%2Freact-simple-badges.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FNWylynko%2Freact-simple-badges?ref=badge_large)
