@@ -8,22 +8,22 @@ function Badge(
       name: string
       logoColor?: string
       label?: string
+      backgroundColor?: string
     }
 ) {
-  const { name, logoColor, label } = props
+  const { name, logoColor, label, backgroundColor } = props
   const hex = '#' + badges[name]
 
-  if (logoColor && !isHex(logoColor)) {
-    throw new Error('color string isnt hex color')
-  }
+  if (backgroundColor && !isHex(backgroundColor))
+    throw new Error('background color isnt hex color eg. #ffffff')
 
   const encodedName =
     label || name.replace(/-/g, '--').replace(/_/g, '__').replace(/ /g, '_')
 
   const src = encodeURI(
-    `https://img.shields.io/badge/${encodedName} -${hex}.svg?&style=for-the-badge&logo=${name}&logoColor=${
-      logoColor || 'white'
-    }`
+    `https://img.shields.io/badge/${encodedName} -${
+      backgroundColor || hex
+    }.svg?&style=for-the-badge&logo=${name}&logoColor=${logoColor || 'white'}`
   ).replace(/#/g, '%23')
 
   return <img src={src} alt={props.name} {...props} />

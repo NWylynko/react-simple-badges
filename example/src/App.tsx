@@ -8,7 +8,7 @@ const App = () => {
       <Badge name="node.js" style={{width: 200}} logoColor="#eb4034" />
       <Badge name="YouTube Gaming" label="Youtube" />
       <Badge name="Valve" label="Steam" style={{padding: 10}} />
-      <Badge name="Tesla" />
+      <Badge name="Tesla" backgroundColor="#32a852" />
     </>
   )
 }
