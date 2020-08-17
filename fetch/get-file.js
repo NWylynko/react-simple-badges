@@ -15,7 +15,7 @@ fetch(url)
         console.error(err)
         saveData(newData)
         bumpVersion()
-      } else if (oldData === newData) {
+      } else if (Equal(oldData, newData)) {
         // exit if the file hasnt changed
         console.log('file hasnt changed')
         process.exit(1)
@@ -56,3 +56,8 @@ function bumpVersion() {
     fs.writeFileSync('../package.json', JSON.stringify(package, null, '\t'))
   })
 }
+
+function Equal(object1, object2) {
+  return JSON.stringify(object1) === JSON.stringify(object2)
+}
+
