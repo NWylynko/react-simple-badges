@@ -24,6 +24,7 @@ A set of Components that are auto generated from simpleicons.org list of icons u
 
 ###sample###
 ![Sample Code Output](./fetch/example.png)
+
 [Example project on stackblitz.com](https://stackblitz.com/edit/react-ejp4ec?embed=1&file=src/App.js&hideExplorer=1&hideNavigation=1&view=preview)
 
 ###badges###

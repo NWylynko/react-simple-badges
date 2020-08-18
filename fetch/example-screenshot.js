@@ -16,6 +16,14 @@ web.stdout.on('data', async (data) => {
   }
 })
 
+web.stderr.on('data', (data) => {
+  console.error(`error: ${data}`)
+})
+
+web.on('close', (code) => {
+  console.log(`child process exited with code ${code}`)
+})
+
 const run = async () => {
   const browser = await puppeteer.launch()
   const page = await browser.newPage()
