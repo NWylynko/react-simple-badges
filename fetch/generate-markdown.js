@@ -1,12 +1,13 @@
 const fs = require('fs')
+const util = require('util')
 const tablemark = require('tablemark')
 
-fs.readFile('data.min.json', 'utf8', (err, data) => {
-  if (err) throw new Error(err)
+const readFile = util.promisify(fs.readFile)
 
-  const json = JSON.parse(data)
-  // console.log(json)
-  const test = json.map((item) => {
+async function generate() {
+  const json = JSON.parse(await readFile('data.min.json', 'utf8'))
+
+  const badges = json.map((item) => {
     const encodedName = item.name
       .replace(/-/g, '--')
       .replace(/_/g, '__')
@@ -21,11 +22,17 @@ fs.readFile('data.min.json', 'utf8', (err, data) => {
     }
   })
 
-  const md =
-    '\n\n### Badges\n\n' + tablemark(test).replace('Jsx', 'JSX') + '\n\n'
+  const badgesMD = '\n### Badges\n\n' + tablemark(badges).replace('Jsx', 'JSX')
 
-  fs.readFile('../README-without-table.md', 'utf8', (err, data) => {
-    if (err) throw new Error(err)
-    fs.writeFileSync('../README.md', data + md)
-  })
-})
+  const TSX = await readFile('../example/src/App.tsx', 'utf8')
+  const sampleTSX = '```JSX\n' + TSX + '```'
+
+  const template = await readFile('../README-template.md', 'utf8')
+
+  const newMD = template
+    .replace('###badges###', badgesMD)
+    .replace('###sample###', sampleTSX)
+  fs.writeFileSync('../README.md', newMD)
+}
+
+generate()

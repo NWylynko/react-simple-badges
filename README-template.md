@@ -22,23 +22,7 @@ A set of Components that are auto generated from simpleicons.org list of icons u
 
 ## Usage
 
-```tsx
-import React from 'react'
-
-import Badge from 'react-simple-badges'
-
-const App = () => {
-  return (
-    <>
-      <Badge name="node.js" style={{width: 200}} />
-      <Badge name="YouTube Gaming" />
-      <Badge name="Valve" />
-      <Badge name="Tesla" />
-    </>
-  )
-}
-
-export default App
-```
+###sample###
 [Example project on stackblitz.com](https://stackblitz.com/edit/react-ejp4ec?embed=1&file=src/App.js&hideExplorer=1&hideNavigation=1&view=preview)
 
+###badges###
