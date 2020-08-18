@@ -33,7 +33,7 @@ const App = () => {
       <Badge name="node.js" style={{width: 200}} logoColor="#eb4034" />
       <Badge name="YouTube Gaming" label="Youtube" />
       <Badge name="Valve" label="Steam" style={{padding: 10}} />
-      <Badge name="Tesla" backgroundColor="#32a852" />
+      <Badge name="Tesla" backgroundColor="#32a853" />
     </>
   )
 }
@@ -41,6 +41,7 @@ const App = () => {
 export default App
 ```
 ![Sample Code Output](./fetch/example.png)
+
 [Example project on stackblitz.com](https://stackblitz.com/edit/react-ejp4ec?embed=1&file=src/App.js&hideExplorer=1&hideNavigation=1&view=preview)
 
 
