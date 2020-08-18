@@ -6,8 +6,9 @@ const web = spawn('yarn', ['start'], { cwd: '../example', shell: true })
 web.stdout.on('data', async (data) => {
   if (data.includes('Compiled successfully!')) {
     console.log('Compiled successfully!')
-    await run()
-    web.kill()
+    // await run()
+    run()
+    // web.kill()
   } else if (data.includes('Failed to compile.')) {
     console.log('Failed to compile.')
     process.exit(1)
@@ -44,8 +45,10 @@ const run = async () => {
     clip: { x: 0, y: 0, ...dimensions }
   })
   console.log('taken screenshot')
+  process.exit()
 
-  await browser.close()
+  // await browser.close()
+
 }
 
 // run()
