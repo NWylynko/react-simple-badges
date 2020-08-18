@@ -48,7 +48,6 @@ const run = async () => {
   process.exit()
 
   // await browser.close()
-
 }
 
 // run()
