@@ -13,6 +13,16 @@ jobs:
       - uses: actions/setup-node@master
         with:
           node-version: 14
+      - run: yarn install-fetch-dependencies
+      - run: yarn example-install
+      - run: yarn screenshot
+      - run: yarn build-readme
+      - uses: EndBug/add-and-commit@v4
+        with:
+          author_name: README builder
+          message: 'Updated Readme'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - run: yarn install
       - run: yarn test
       - run: yarn publish

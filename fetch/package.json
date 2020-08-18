@@ -5,6 +5,7 @@
   "license": "MIT",
   "dependencies": {
     "node-fetch": "^2.6.0",
+    "puppeteer": "^5.2.1",
     "tablemark": "^2.0.0"
   }
 }
