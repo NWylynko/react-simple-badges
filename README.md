@@ -47,16 +47,16 @@ export default App
 
 ## props `<Badge />`
 
-### `<Badge name="" />`
+### `<Badge name="" />` required : string
 The name of the badge your trying to use
 eg. "Instagram"
-### `<Badge label="" />`
+### `<Badge label="" />` optional : string
 A custom string to replace the word on the badge
 eg. "Insta"
-### `<Badge logoColor="" />`
+### `<Badge logoColor="" />` optional : string : hex color
 Replaces the color of the logo that default to white
 eg. "#ffb900"
-### `<Badge backgroundColor="" />`
+### `<Badge backgroundColor="" />` optional : string : hex color
 Replaces the color of the background of the badge
 eg. "#00e1ff"
 
