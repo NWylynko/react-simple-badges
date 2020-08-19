@@ -24,14 +24,9 @@ async function generate() {
 
   const badgesMD = '\n### Badges\n\n' + tablemark(badges).replace('Jsx', 'JSX')
 
-  const TSX = await readFile('../example/src/App.tsx', 'utf8')
-  const sampleTSX = '```JSX\n' + TSX + '```'
+  const template = await readFile('../README.md', 'utf8')
 
-  const template = await readFile('../README-template.md', 'utf8')
-
-  const newMD = template
-    .replace('###badges###', badgesMD)
-    .replace('###sample###', sampleTSX)
+  const newMD = template.replace('###badges###', badgesMD)
   fs.writeFileSync('../README.md', newMD)
 }
 

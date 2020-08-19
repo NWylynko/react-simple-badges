@@ -17,6 +17,7 @@ jobs:
       - run: yarn install-fetch-dependencies
       - run: yarn example-install
       - run: yarn screenshot
+      - uses: nwylynko/markdown-add-file@v1.2
       - run: yarn build-readme
       - uses: EndBug/add-and-commit@v4
         with:
