@@ -23,7 +23,8 @@ A Component that renders an image of a badge from shields.io using simpleicons.o
 
 ## Usage
 
-```JSX
+
+```tsx
 import React from 'react'
 
 import Badge from 'react-simple-badges'
@@ -40,7 +41,9 @@ const App = () => {
 }
 
 export default App
+
 ```
+
 ![Sample Code Output](./fetch/example.png)
 
 [Example project on stackblitz.com](https://stackblitz.com/edit/react-ejp4ec?embed=1&file=src/App.js&hideExplorer=1&hideNavigation=1&view=preview)
