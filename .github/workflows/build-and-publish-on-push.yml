@@ -10,6 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
+      - uses: nwylynko/markdown-add-files@v1.2
       - uses: actions/setup-node@master
         with:
           node-version: 14
@@ -17,7 +18,6 @@ jobs:
       - run: yarn install-fetch-dependencies
       - run: yarn example-install
       - run: yarn screenshot
-      - uses: nwylynko/markdown-add-files@v1.2
       - run: yarn build-readme
       - uses: EndBug/add-and-commit@v4
         with:
