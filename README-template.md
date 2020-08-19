@@ -18,7 +18,8 @@ yarn add react-simple-badges
 
 ## What is this Component?
 
-A Component that renders an image of a badge from shields.io useing simpleicons.org list of icons. A github action is run every 24 hours checking if the list has been updated and will automatically update the Badge component with the new badges and be published to npm with a new version number. Any props passed to the component get passed along to the img element in it so things like style can be applied easily.
+A Component that renders an image of a badge from shields.io using simpleicons.org list of icons. A github action is run every 24 hours checking if the list has been updated and will automatically update the Badge component with the new badges and be published to npm with a new version number. Any props passed to the component get passed along to the img element in it so things like style can be applied easily.
+
 
 ## Usage
 
