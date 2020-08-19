@@ -16,9 +16,9 @@ npm i react-simple-badges
 yarn add react-simple-badges
 ```
 
-## What is this Component library?
+## What is this Component?
 
-A set of Components that are auto generated from simpleicons.org list of icons using shields.io badges. A github action is run every 24 hours checking if the list has been updated and will automatically update the Badge component with the new badges and be published to npm with a new version number. Any props passed to the component get passed along to the img element in it so things like style can be applied easily.
+A Component that renders an image of a badge from shields.io useing simpleicons.org list of icons. A github action is run every 24 hours checking if the list has been updated and will automatically update the Badge component with the new badges and be published to npm with a new version number. Any props passed to the component get passed along to the img element in it so things like style can be applied easily.
 
 ## Usage
 
@@ -43,6 +43,21 @@ export default App
 ![Sample Code Output](./fetch/example.png)
 
 [Example project on stackblitz.com](https://stackblitz.com/edit/react-ejp4ec?embed=1&file=src/App.js&hideExplorer=1&hideNavigation=1&view=preview)
+
+## props `<Badge />`
+
+### `<Badge name="" />`
+The name of the badge your trying to use
+eg. "Instagram"
+### `<Badge label="" />`
+A custom string to replace the word on the badge
+eg. "Insta"
+### `<Badge logoColor="" />`
+Replaces the color of the logo that default to white
+eg. "#ffb900"
+### `<Badge backgroundColor="" />`
+Replaces the color of the background of the badge
+eg. "#00e1ff"
 
 
 ### Badges
@@ -1450,3 +1465,4 @@ export default App
 | Zoom                         | <img src="https://img.shields.io/badge/Zoom%20-%232D8CFF.svg?&style=for-the-badge&logo=Zoom&logoColor=white"/>                                                                     | ```<Badge name="Zoom" />```                         |
 | Zorin                        | <img src="https://img.shields.io/badge/Zorin%20-%230CC1F3.svg?&style=for-the-badge&logo=Zorin&logoColor=white"/>                                                                   | ```<Badge name="Zorin" />```                        |
 | Zulip                        | <img src="https://img.shields.io/badge/Zulip%20-%2352C2AF.svg?&style=for-the-badge&logo=Zulip&logoColor=white"/>                                                                   | ```<Badge name="Zulip" />```                        |
+
