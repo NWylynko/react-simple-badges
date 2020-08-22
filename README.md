@@ -63,6 +63,8 @@ eg. "#ffb900"
 Replaces the color of the background of the badge
 eg. "#00e1ff"
 
+<details><summary>Badges</summary>
+
 
 ### Badges
 
@@ -600,6 +602,7 @@ eg. "#00e1ff"
 | Gumtree                      | <img src="https://img.shields.io/badge/Gumtree%20-%2372EF36.svg?&style=for-the-badge&logo=Gumtree&logoColor=white"/>                                                               | ```<Badge name="Gumtree" />```                      |
 | Gutenberg                    | <img src="https://img.shields.io/badge/Gutenberg%20-%23000000.svg?&style=for-the-badge&logo=Gutenberg&logoColor=white"/>                                                           | ```<Badge name="Gutenberg" />```                    |
 | Habr                         | <img src="https://img.shields.io/badge/Habr%20-%2377A2B6.svg?&style=for-the-badge&logo=Habr&logoColor=white"/>                                                                     | ```<Badge name="Habr" />```                         |
+| Hack Club                    | <img src="https://img.shields.io/badge/Hack_Club%20-%23EC3750.svg?&style=for-the-badge&logo=Hack%20Club&logoColor=white"/>                                                         | ```<Badge name="Hack Club" />```                    |
 | Hackaday                     | <img src="https://img.shields.io/badge/Hackaday%20-%231A1A1A.svg?&style=for-the-badge&logo=Hackaday&logoColor=white"/>                                                             | ```<Badge name="Hackaday" />```                     |
 | HackerEarth                  | <img src="https://img.shields.io/badge/HackerEarth%20-%23323754.svg?&style=for-the-badge&logo=HackerEarth&logoColor=white"/>                                                       | ```<Badge name="HackerEarth" />```                  |
 | HackerOne                    | <img src="https://img.shields.io/badge/HackerOne%20-%23494649.svg?&style=for-the-badge&logo=HackerOne&logoColor=white"/>                                                           | ```<Badge name="HackerOne" />```                    |
@@ -1470,3 +1473,5 @@ eg. "#00e1ff"
 | Zorin                        | <img src="https://img.shields.io/badge/Zorin%20-%230CC1F3.svg?&style=for-the-badge&logo=Zorin&logoColor=white"/>                                                                   | ```<Badge name="Zorin" />```                        |
 | Zulip                        | <img src="https://img.shields.io/badge/Zulip%20-%2352C2AF.svg?&style=for-the-badge&logo=Zulip&logoColor=white"/>                                                                   | ```<Badge name="Zulip" />```                        |
 
+
+</details>
