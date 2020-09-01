@@ -30,20 +30,19 @@ const run = async () => {
   const page = await browser.newPage()
   await page.goto('http://localhost:3000')
 
-//   const dimensions = await page.evaluate(() => {
-//     return {
-//       // plus 16 for the 8px margin from the body tag
-//       width: document.getElementById('root').offsetWidth + 16,
-//       height: document.getElementById('root').offsetHeight + 16
-//     }
-//   })
+  const dimensions = await page.evaluate(() => {
+    return {
+      // plus 16 for the 8px margin from the body tag
+      width: document.getElementById('root').offsetWidth + 16,
+      height: document.getElementById('root').offsetHeight + 16
+    }
+  })
 
   console.log('Dimensions:', dimensions)
 
   await page.screenshot({
     path: 'example.png',
-//     clip: { x: 0, y: 0, ...dimensions }
-    clip: { x: 0, y: 0, height: 300, width: 300 }
+    clip: { x: 0, y: 0, ...dimensions }
   })
   console.log('taken screenshot')
   process.exit()
