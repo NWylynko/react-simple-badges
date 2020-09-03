@@ -4,6 +4,8 @@
 
 React badges for your Profile and Projects.
 
+[Find a complete list of over 1400 badges in badges.md](https://github.com/NWylynko/react-simple-badges/blob/master/badges.md)
+
 [![NPM](https://nodei.co/npm/react-simple-badges.png)](https://www.npmjs.com/package/react-simple-badges)
 
 ## Install
