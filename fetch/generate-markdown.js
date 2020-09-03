@@ -1,6 +1,6 @@
 const fs = require('fs')
 const util = require('util')
-const tablemark = require('tablemark')
+const MDTableGen = require('tablemark')
 
 const readFile = util.promisify(fs.readFile)
 
@@ -22,12 +22,9 @@ async function generate() {
     }
   })
 
-  const badgesMD = '\n### Badges\n\n' + tablemark(badges).replace('Jsx', 'JSX')
+  const badgesMD = MDTableGen(badges).replace('Jsx', 'JSX')
 
-  const template = await readFile('../README.md', 'utf8')
-
-  const newMD = template.replace('###badges###', badgesMD)
-  fs.writeFileSync('../README.md', newMD)
+  fs.writeFileSync('../badges.md', badgesMD)
 }
 
 generate()
