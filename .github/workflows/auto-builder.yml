@@ -14,7 +14,7 @@ jobs:
           node-version: 14
       - run: yarn install-fetch-dependencies
       - run: yarn get-data
-      - run: yarn build-readme
+      - run: yarn build-badgeMD
       - uses: EndBug/add-and-commit@v4
         with:
           author_name: Auto Builder

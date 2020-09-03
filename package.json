@@ -17,11 +17,9 @@
 		"lint": "eslint .",
 		"test": "cross-env CI=1 react-scripts test --env=jsdom",
 		"test:watch": "react-scripts test --env=jsdom",
-		"install-fetch-dependencies": "cd fetch && yarn",
 		"get-data": "cd fetch && node get-file.js",
-		"build-readme": "cd fetch && node generate-markdown.js",
-		"screenshot": "cd fetch && node example-screenshot.js",
-		"example-install": "cd example && yarn"
+		"build-badgeMD": "cd fetch && node generate-markdown.js",
+		"install-fetch-dependencies": "cd fetch && yarn"
 	},
 	"peerDependencies": {
 		"react": "^16.0.0"
