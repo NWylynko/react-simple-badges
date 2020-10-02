@@ -24,6 +24,7 @@ jobs:
           message: 'Updated Readme'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - run: yarn build
       - run: yarn test
       - run: yarn publish
         env:
