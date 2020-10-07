@@ -26,9 +26,21 @@ function Badge(
     }.svg?&style=for-the-badge&logo=${name}&logoColor=${logoColor || 'white'}`
   ).replace(/#/g, '%23')
 
-  return <img src={src} alt={props.name} {...props} />
+  const customProps = ['name', 'logoColor', 'label', 'backgroundColor']
+
+  const imgProps = removeItems(props, customProps)
+
+  return <img src={src} alt={props.name} {...imgProps} />
 }
 
 const isHex = (color: string): boolean => /^#[0-9A-Fa-f]{6}$/i.test(color)
+
+const removeItems = (props: any, customProps: any) =>
+  Object.keys(props).reduce((object, key) => {
+    if (!customProps.includes(key)) {
+      object[key] = props[key]
+    }
+    return object
+  }, {})
 
 export default Badge
