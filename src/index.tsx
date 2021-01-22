@@ -1,5 +1,26 @@
 import * as React from 'react'
-import badges from './data.json'
+// import fetch from 'node-fetch'
+
+const customProps = ['name', 'logoColor', 'label', 'backgroundColor']
+
+const businessThemeColor = (name: string) =>
+  encodeURI(
+    `https://us-central1-business-primary-color.cloudfunctions.net/default?name=${name}`
+  )
+
+interface BadgeSrc {
+  encodedName: string
+  hex: string
+  logoColor?: string
+  name: string
+}
+
+const badgeSrc = ({ encodedName, hex, logoColor, name }: BadgeSrc) =>
+  encodeURI(
+    `https://img.shields.io/badge/${encodedName} -${hex}.svg?&style=for-the-badge&logo=${name}&logoColor=${
+      logoColor || 'white'
+    }`
+  ).replace(/#/g, '%23')
 
 function Badge(
   props: JSX.IntrinsicAttributes &
@@ -12,25 +33,42 @@ function Badge(
     }
 ) {
   const { name, logoColor, label, backgroundColor } = props
-  const hex = '#' + badges[name]
+
+  const [hex, setHex] = React.useState(backgroundColor)
+  const [encodedName, setEncodedName] = React.useState(
+    label || name.replace(/-/g, '--').replace(/_/g, '__').replace(/ /g, '_')
+  )
+  const [src, setSrc] = React.useState<string>()
+
+  React.useEffect(() => {
+    ;(async () => {
+      if (hex === undefined) {
+        console.log('no hex, fetching...')
+        setHex(`#${await (await fetch(businessThemeColor(name))).text()}`)
+      }
+    })()
+  }, [hex])
 
   if (backgroundColor && !isHex(backgroundColor))
     throw new Error('background color isnt hex color eg. #ffffff')
 
-  const encodedName =
-    label || name.replace(/-/g, '--').replace(/_/g, '__').replace(/ /g, '_')
+  React.useEffect(() => {
+    setEncodedName(
+      label || name.replace(/-/g, '--').replace(/_/g, '__').replace(/ /g, '_')
+    )
+  }, [label, name])
 
-  const src = encodeURI(
-    `https://img.shields.io/badge/${encodedName} -${
-      backgroundColor || hex
-    }.svg?&style=for-the-badge&logo=${name}&logoColor=${logoColor || 'white'}`
-  ).replace(/#/g, '%23')
+  React.useEffect(() => {
+    if (hex) {
+      setSrc(badgeSrc({ encodedName, hex, logoColor, name }))
+    }
+  }, [encodedName, hex, logoColor, name])
 
-  const customProps = ['name', 'logoColor', 'label', 'backgroundColor']
+  if (!src) {
+    return <p>loading...</p>
+  }
 
-  const imgProps = removeItems(props, customProps)
-
-  return <img src={src} alt={props.name} {...imgProps} />
+  return <img src={src} alt={props.name} {...removeItems(props, customProps)} />
 }
 
 const isHex = (color: string): boolean => /^#[0-9A-Fa-f]{6}$/i.test(color)
