@@ -43,7 +43,6 @@ function Badge(
   React.useEffect(() => {
     ;(async () => {
       if (hex === undefined) {
-        console.log('no hex, fetching...')
         setHex(`#${await (await fetch(businessThemeColor(name))).text()}`)
       }
     })()
@@ -65,7 +64,7 @@ function Badge(
   }, [encodedName, hex, logoColor, name])
 
   if (!src) {
-    return <p>loading...</p>
+    return null;
   }
 
   return <img src={src} alt={props.name} {...removeItems(props, customProps)} />
