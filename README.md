@@ -20,7 +20,7 @@ yarn add react-simple-badges
 
 ## What is this Component?
 
-A Component that renders an image of a badge from shields.io using simpleicons.org list of icons. shields.io doesn't store the primary accent colour of the icon though, simple icons does in a json file. but downloading the whole file (~40kb gziped) is bad for the loading times of a website. so the json file is stored in a firebase function which the component sends a request too with the name of the badge your trying to display. A github action is run every 24 hours checking if the list has been updated and will automatically update the firebase function with the new badges and be published to firebase. Any props passed to the component get passed along to the img element in it so things like style can be applied easily.
+A Component that renders an image of a badge from shields.io using simpleicons.org list of icons. shields.io doesn't store the primary accent colour of the icon though, simple icons does in a json file. but downloading the whole file (~40kb gziped) is bad for the loading times of a website. so the json file is stored in a [firebase function](https://github.com/NWylynko/business-primary-color) which the component sends a request too with the name of the badge your trying to display. A github action is run every 24 hours checking if the list has been updated and will automatically update the firebase function with the new badges and be published to firebase. Any props passed to the component get passed along to the img element in it so things like style can be applied easily.
 
 
 ## Usage
