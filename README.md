@@ -76,3 +76,7 @@ eg. "#ffb900"
 ### `<Badge backgroundColor="" />` optional : string : hex color
 Replaces the color of the background of the badge
 eg. "#00e1ff"
+
+## most popular badges
+
+![most popular badges](https://us-central1-business-primary-color.cloudfunctions.net/graph)
