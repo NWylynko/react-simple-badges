@@ -79,4 +79,4 @@ eg. "#00e1ff"
 
 ## most popular badges
 
-![most popular badges](https://us-central1-business-primary-color.cloudfunctions.net/graph)
+![most popular badges graph](https://us-central1-business-primary-color.cloudfunctions.net/graph)
