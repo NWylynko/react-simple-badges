@@ -25,12 +25,13 @@ export type BadgeProps = JSX.IntrinsicAttributes &
   ImgHTMLAttributes<HTMLImageElement> & {
     logoColor?: string
     label?: string
-    backgroundColor: string
+    backgroundColor?: string
   }
 
 export function Badge(
   props: BadgeProps & {
     name: string
+    backgroundColor: string
   }
 ) {
   const { name, logoColor, label, backgroundColor } = props
