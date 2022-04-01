@@ -1,14 +1,17 @@
 import React from 'react'
 
-import Badge from 'react-simple-badges'
+import NodeJs from "react-simple-badges/dist/badges/Nodejs";
+import YouTubeGaming from "react-simple-badges/dist/badges/YouTubeGaming";
+import Valve from "react-simple-badges/dist/badges/Valve";
+import Tesla from "react-simple-badges/dist/badges/Tesla";
 
 const App = () => {
   return (
     <>
-      <Badge name="Node.js" style={{width: 200}} logoColor="#eb4034" />
-      <Badge name="YouTube Gaming" label="Youtube" />
-      <Badge name="Valve" label="Steamy Boi" style={{padding: 10}} />
-      <Badge name="Tesla" backgroundColor="#32a853" />
+      <NodeJs style={{width: 200}} logoColor="#eb4034" />
+      <YouTubeGaming label="Youtube" />
+      <Valve label="Steamy Boi" style={{padding: 10}} />
+      <Tesla backgroundColor="#32a853" />
     </>
   )
 }

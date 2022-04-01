@@ -1,0 +1,24 @@
+name: auto fetch, build & publish
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - uses: actions/setup-node@master
+        with:
+          node-version: 16.13.2
+
+      - run: yarn fetchColours
+      - run: yarn generateBadges
+
+      - uses: EndBug/add-and-commit@v4
+        with:
+          author_name: Auto Fetch
+          message: 'Updated json'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
