@@ -13,8 +13,8 @@
     "node": ">=10"
   },
   "scripts": {
-    "build": "microbundle-crl -i src/badges/Abbott.tsx",
-    "dev": "microbundle-crl watch --no-compress",
+    "build": "tsc",
+    "dev": "tsc -w",
     "release": "bumpp --commit --push --tag",
     "fetchColours": "cd fetchColours && yarn install && yarn build && yarn start",
     "generateBadges": "cd generateBadges && yarn install && yarn build && yarn start"
