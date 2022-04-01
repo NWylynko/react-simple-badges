@@ -17,7 +17,7 @@ jobs:
           node-version: 16.13.2
       - run: yarn install
       - run: yarn build
-      - run: yarn test
+      # - run: yarn test
       - run: yarn publish
         env:
           NPM_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
