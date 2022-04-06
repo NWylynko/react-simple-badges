@@ -541,6 +541,7 @@ export { default as DoorDash } from "./badges/DoorDash";
 export { default as Douban } from "./badges/Douban";
 export { default as DoubanRead } from "./badges/DoubanRead";
 export { default as DPD } from "./badges/DPD";
+export { default as Dragonframe } from "./badges/Dragonframe";
 export { default as Draugiemlv } from "./badges/Draugiemlv";
 export { default as Dribbble } from "./badges/Dribbble";
 export { default as Drone } from "./badges/Drone";
