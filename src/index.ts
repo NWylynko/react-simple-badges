@@ -850,6 +850,7 @@ export { default as Haveibeenpwned } from "./badges/Haveibeenpwned";
 export { default as Haxe } from "./badges/Haxe";
 export { default as HBO } from "./badges/HBO";
 export { default as HCL } from "./badges/HCL";
+export { default as HeadlessUI } from "./badges/HeadlessUI";
 export { default as Headspace } from "./badges/Headspace";
 export { default as HelloFresh } from "./badges/HelloFresh";
 export { default as HellyHansen } from "./badges/HellyHansen";
