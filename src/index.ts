@@ -770,6 +770,7 @@ export { default as GoLand } from "./badges/GoLand";
 export { default as GoldenLine } from "./badges/GoldenLine";
 export { default as Goodreads } from "./badges/Goodreads";
 export { default as Google } from "./badges/Google";
+export { default as GoogleAdMob } from "./badges/GoogleAdMob";
 export { default as GoogleAds } from "./badges/GoogleAds";
 export { default as GoogleAdSense } from "./badges/GoogleAdSense";
 export { default as GoogleAnalytics } from "./badges/GoogleAnalytics";
