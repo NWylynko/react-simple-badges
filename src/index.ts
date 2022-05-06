@@ -886,6 +886,7 @@ export { default as Houzz } from "./badges/Houzz";
 export { default as HP } from "./badges/HP";
 export { default as HTMLAcademy } from "./badges/HTMLAcademy";
 export { default as HTMLFive } from "./badges/HTMLFive";
+export { default as HTTPie } from "./badges/HTTPie";
 export { default as Huawei } from "./badges/Huawei";
 export { default as HubSpot } from "./badges/HubSpot";
 export { default as Hugo } from "./badges/Hugo";
