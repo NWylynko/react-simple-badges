@@ -1144,6 +1144,7 @@ export { default as Magento } from "./badges/Magento";
 export { default as Magisk } from "./badges/Magisk";
 export { default as MailRu } from "./badges/MailRu";
 export { default as MailChimp } from "./badges/MailChimp";
+export { default as Mailgun } from "./badges/Mailgun";
 export { default as MajorLeagueHacking } from "./badges/MajorLeagueHacking";
 export { default as MakerBot } from "./badges/MakerBot";
 export { default as MAMP } from "./badges/MAMP";
