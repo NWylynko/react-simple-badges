@@ -1177,6 +1177,7 @@ export { default as Mazda } from "./badges/Mazda";
 export { default as McAfee } from "./badges/McAfee";
 export { default as McDonalds } from "./badges/McDonalds";
 export { default as McLaren } from "./badges/McLaren";
+export { default as MdBook } from "./badges/MdBook";
 export { default as MDNWebDocs } from "./badges/MDNWebDocs";
 export { default as MDX } from "./badges/MDX";
 export { default as MediaFire } from "./badges/MediaFire";
