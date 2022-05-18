@@ -2064,6 +2064,7 @@ export { default as V } from "./badges/V";
 export { default as VEight } from "./badges/VEight";
 export { default as Vaadin } from "./badges/Vaadin";
 export { default as Vagrant } from "./badges/Vagrant";
+export { default as Valorant } from "./badges/Valorant";
 export { default as Valve } from "./badges/Valve";
 export { default as Vapor } from "./badges/Vapor";
 export { default as Vault } from "./badges/Vault";
