@@ -1130,6 +1130,7 @@ export { default as Logstash } from "./badges/Logstash";
 export { default as Looker } from "./badges/Looker";
 export { default as Loom } from "./badges/Loom";
 export { default as Loop } from "./badges/Loop";
+export { default as LoopBack } from "./badges/LoopBack";
 export { default as Lospec } from "./badges/Lospec";
 export { default as LOTPolishAirlines } from "./badges/LOTPolishAirlines";
 export { default as Lua } from "./badges/Lua";
