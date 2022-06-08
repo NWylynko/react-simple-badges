@@ -1387,6 +1387,7 @@ export { default as OpenSUSE } from "./badges/OpenSUSE";
 export { default as OpenTelemetry } from "./badges/OpenTelemetry";
 export { default as OpenVPN } from "./badges/OpenVPN";
 export { default as OpenWrt } from "./badges/OpenWrt";
+export { default as OpenZeppelin } from "./badges/OpenZeppelin";
 export { default as OpenZFS } from "./badges/OpenZFS";
 export { default as Opera } from "./badges/Opera";
 export { default as OPNSense } from "./badges/OPNSense";
