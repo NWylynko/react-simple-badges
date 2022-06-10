@@ -1008,6 +1008,7 @@ export { default as Jupyter } from "./badges/Jupyter";
 export { default as JustEat } from "./badges/JustEat";
 export { default as JustGiving } from "./badges/JustGiving";
 export { default as KThrees } from "./badges/KThrees";
+export { default as KSix } from "./badges/KSix";
 export { default as Kaggle } from "./badges/Kaggle";
 export { default as Kahoot } from "./badges/Kahoot";
 export { default as KaiOS } from "./badges/KaiOS";
