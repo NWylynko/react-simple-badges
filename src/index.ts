@@ -1032,6 +1032,7 @@ export { default as Katana } from "./badges/Katana";
 export { default as Kaufland } from "./badges/Kaufland";
 export { default as KDE } from "./badges/KDE";
 export { default as Kdenlive } from "./badges/Kdenlive";
+export { default as KeepaChangelog } from "./badges/KeepaChangelog";
 export { default as KeePassXC } from "./badges/KeePassXC";
 export { default as Kentico } from "./badges/Kentico";
 export { default as Keras } from "./badges/Keras";
