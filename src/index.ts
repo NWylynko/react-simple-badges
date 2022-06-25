@@ -557,6 +557,7 @@ export { default as Dropbox } from "./badges/Dropbox";
 export { default as Drupal } from "./badges/Drupal";
 export { default as DSAutomobiles } from "./badges/DSAutomobiles";
 export { default as DTube } from "./badges/DTube";
+export { default as DuckDB } from "./badges/DuckDB";
 export { default as DuckDuckGo } from "./badges/DuckDuckGo";
 export { default as DungeonsDragons } from "./badges/DungeonsDragons";
 export { default as Dunked } from "./badges/Dunked";
