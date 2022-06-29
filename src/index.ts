@@ -1507,6 +1507,7 @@ export { default as PlayStationThree } from "./badges/PlayStationThree";
 export { default as PlayStationFour } from "./badges/PlayStationFour";
 export { default as PlayStationFive } from "./badges/PlayStationFive";
 export { default as PlayStationVita } from "./badges/PlayStationVita";
+export { default as Playwright } from "./badges/Playwright";
 export { default as Pleroma } from "./badges/Pleroma";
 export { default as Plesk } from "./badges/Plesk";
 export { default as Plex } from "./badges/Plex";
