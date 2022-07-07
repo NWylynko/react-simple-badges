@@ -2081,6 +2081,7 @@ export { default as Unicode } from "./badges/Unicode";
 export { default as Unilever } from "./badges/Unilever";
 export { default as UnitedAirlines } from "./badges/UnitedAirlines";
 export { default as Unity } from "./badges/Unity";
+export { default as Unlicense } from "./badges/Unlicense";
 export { default as UnoCSS } from "./badges/UnoCSS";
 export { default as Unraid } from "./badges/Unraid";
 export { default as UnrealEngine } from "./badges/UnrealEngine";
