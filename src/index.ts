@@ -600,6 +600,7 @@ export { default as Elasticsearch } from "./badges/Elasticsearch";
 export { default as Electron } from "./badges/Electron";
 export { default as Element } from "./badges/Element";
 export { default as Elementary } from "./badges/Elementary";
+export { default as Elementor } from "./badges/Elementor";
 export { default as Eleventy } from "./badges/Eleventy";
 export { default as Elixir } from "./badges/Elixir";
 export { default as Ello } from "./badges/Ello";
