@@ -1410,6 +1410,7 @@ export { default as OpenStack } from "./badges/OpenStack";
 export { default as OpenStreetMap } from "./badges/OpenStreetMap";
 export { default as OpenSUSE } from "./badges/OpenSUSE";
 export { default as OpenTelemetry } from "./badges/OpenTelemetry";
+export { default as Openverse } from "./badges/Openverse";
 export { default as OpenVPN } from "./badges/OpenVPN";
 export { default as OpenWrt } from "./badges/OpenWrt";
 export { default as OpenZeppelin } from "./badges/OpenZeppelin";
