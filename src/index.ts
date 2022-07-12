@@ -315,6 +315,7 @@ export { default as Bukalapak } from "./badges/Bukalapak";
 export { default as Bulma } from "./badges/Bulma";
 export { default as Bunq } from "./badges/Bunq";
 export { default as BurgerKing } from "./badges/BurgerKing";
+export { default as Burton } from "./badges/Burton";
 export { default as BuyMeACoffee } from "./badges/BuyMeACoffee";
 export { default as BuzzFeed } from "./badges/BuzzFeed";
 export { default as Byjus } from "./badges/Byjus";
