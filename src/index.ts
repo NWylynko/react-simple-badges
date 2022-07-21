@@ -1642,6 +1642,7 @@ export { default as Ray } from "./badges/Ray";
 export { default as Razer } from "./badges/Razer";
 export { default as Razorpay } from "./badges/Razorpay";
 export { default as ReactBadge } from "./badges/ReactBadge";
+export { default as ReactHookForm } from "./badges/ReactHookForm";
 export { default as ReactQuery } from "./badges/ReactQuery";
 export { default as ReactRouter } from "./badges/ReactRouter";
 export { default as ReactTable } from "./badges/ReactTable";
