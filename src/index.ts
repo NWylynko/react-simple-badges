@@ -484,6 +484,7 @@ export { default as CurseForge } from "./badges/CurseForge";
 export { default as CyclingSevenFour } from "./badges/CyclingSevenFour";
 export { default as Cypress } from "./badges/Cypress";
 export { default as Cytoscapejs } from "./badges/Cytoscapejs";
+export { default as D } from "./badges/D";
 export { default as DEDGE } from "./badges/DEDGE";
 export { default as DWaveSystems } from "./badges/DWaveSystems";
 export { default as DThreejs } from "./badges/DThreejs";
