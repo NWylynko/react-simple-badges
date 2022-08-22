@@ -222,6 +222,7 @@ export { default as AwesomeWM } from "./badges/AwesomeWM";
 export { default as AWSAmplify } from "./badges/AWSAmplify";
 export { default as AWSFargate } from "./badges/AWSFargate";
 export { default as AWSLambda } from "./badges/AWSLambda";
+export { default as Axios } from "./badges/Axios";
 export { default as AzureArtifacts } from "./badges/AzureArtifacts";
 export { default as AzureDataExplorer } from "./badges/AzureDataExplorer";
 export { default as AzureDevOps } from "./badges/AzureDevOps";
