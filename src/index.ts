@@ -2173,6 +2173,7 @@ export { default as Vuetify } from "./badges/Vuetify";
 export { default as Vulkan } from "./badges/Vulkan";
 export { default as Vultr } from "./badges/Vultr";
 export { default as WThreeC } from "./badges/WThreeC";
+export { default as Wacom } from "./badges/Wacom";
 export { default as Wagtail } from "./badges/Wagtail";
 export { default as WakaTime } from "./badges/WakaTime";
 export { default as WALKMAN } from "./badges/WALKMAN";
