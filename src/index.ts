@@ -740,6 +740,7 @@ export { default as Freedesktoporg } from "./badges/Freedesktoporg";
 export { default as Freelancer } from "./badges/Freelancer";
 export { default as FreeNAS } from "./badges/FreeNAS";
 export { default as FrontendMentor } from "./badges/FrontendMentor";
+export { default as FugaCloud } from "./badges/FugaCloud";
 export { default as Fujifilm } from "./badges/Fujifilm";
 export { default as Fujitsu } from "./badges/Fujitsu";
 export { default as Funimation } from "./badges/Funimation";
