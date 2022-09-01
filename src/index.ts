@@ -2188,6 +2188,7 @@ export { default as Walmart } from "./badges/Walmart";
 export { default as Wappalyzer } from "./badges/Wappalyzer";
 export { default as WarnerBros } from "./badges/WarnerBros";
 export { default as WasmCloud } from "./badges/WasmCloud";
+export { default as Wasmer } from "./badges/Wasmer";
 export { default as Wattpad } from "./badges/Wattpad";
 export { default as Waze } from "./badges/Waze";
 export { default as WearOS } from "./badges/WearOS";
