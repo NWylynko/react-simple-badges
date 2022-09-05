@@ -1906,6 +1906,7 @@ export { default as SSRN } from "./badges/SSRN";
 export { default as StackExchange } from "./badges/StackExchange";
 export { default as StackOverflow } from "./badges/StackOverflow";
 export { default as Stackbit } from "./badges/Stackbit";
+export { default as StackBlitz } from "./badges/StackBlitz";
 export { default as StackEdit } from "./badges/StackEdit";
 export { default as StackPath } from "./badges/StackPath";
 export { default as StackShare } from "./badges/StackShare";
