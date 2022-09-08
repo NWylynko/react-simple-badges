@@ -244,6 +244,7 @@ export { default as BankofAmerica } from "./badges/BankofAmerica";
 export { default as Barclays } from "./badges/Barclays";
 export { default as Baremetrics } from "./badges/Baremetrics";
 export { default as Basecamp } from "./badges/Basecamp";
+export { default as Bastyon } from "./badges/Bastyon";
 export { default as Bata } from "./badges/Bata";
 export { default as BathASU } from "./badges/BathASU";
 export { default as Battlenet } from "./badges/Battlenet";
