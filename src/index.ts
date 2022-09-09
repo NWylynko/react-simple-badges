@@ -496,6 +496,7 @@ export { default as Dacia } from "./badges/Dacia";
 export { default as DAF } from "./badges/DAF";
 export { default as Dailymotion } from "./badges/Dailymotion";
 export { default as Daimler } from "./badges/Daimler";
+export { default as Dapr } from "./badges/Dapr";
 export { default as DarkReader } from "./badges/DarkReader";
 export { default as Dart } from "./badges/Dart";
 export { default as Darty } from "./badges/Darty";
