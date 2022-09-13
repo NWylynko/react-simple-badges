@@ -54,6 +54,7 @@ export { default as Affinity } from "./badges/Affinity";
 export { default as AffinityDesigner } from "./badges/AffinityDesigner";
 export { default as AffinityPhoto } from "./badges/AffinityPhoto";
 export { default as AffinityPublisher } from "./badges/AffinityPublisher";
+export { default as Agora } from "./badges/Agora";
 export { default as AIDungeon } from "./badges/AIDungeon";
 export { default as AIB } from "./badges/AIB";
 export { default as AIOHTTP } from "./badges/AIOHTTP";
