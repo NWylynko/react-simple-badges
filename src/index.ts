@@ -2204,6 +2204,7 @@ export { default as Vonage } from "./badges/Vonage";
 export { default as VowpalWabbit } from "./badges/VowpalWabbit";
 export { default as VOX } from "./badges/VOX";
 export { default as VSCO } from "./badges/VSCO";
+export { default as VSCodium } from "./badges/VSCodium";
 export { default as VTEX } from "./badges/VTEX";
 export { default as Vuejs } from "./badges/Vuejs";
 export { default as Vuetify } from "./badges/Vuetify";
