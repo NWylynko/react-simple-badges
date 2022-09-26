@@ -1987,6 +1987,7 @@ export { default as SumoLogic } from "./badges/SumoLogic";
 export { default as Supabase } from "./badges/Supabase";
 export { default as SuperUser } from "./badges/SuperUser";
 export { default as Supermicro } from "./badges/Supermicro";
+export { default as SurrealDB } from "./badges/SurrealDB";
 export { default as SurveyMonkey } from "./badges/SurveyMonkey";
 export { default as SUSE } from "./badges/SUSE";
 export { default as Suzuki } from "./badges/Suzuki";
