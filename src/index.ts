@@ -339,6 +339,7 @@ export { default as CPlusPlus } from "./badges/CPlusPlus";
 export { default as Cachet } from "./badges/Cachet";
 export { default as CafePress } from "./badges/CafePress";
 export { default as Caffeine } from "./badges/Caffeine";
+export { default as CairoGraphics } from "./badges/CairoGraphics";
 export { default as CairoMetro } from "./badges/CairoMetro";
 export { default as CakePHP } from "./badges/CakePHP";
 export { default as CampaignMonitor } from "./badges/CampaignMonitor";
