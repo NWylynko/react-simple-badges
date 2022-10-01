@@ -868,6 +868,7 @@ export { default as GraphQL } from "./badges/GraphQL";
 export { default as Grav } from "./badges/Grav";
 export { default as Gravatar } from "./badges/Gravatar";
 export { default as Graylog } from "./badges/Graylog";
+export { default as Greenhouse } from "./badges/Greenhouse";
 export { default as GreenSock } from "./badges/GreenSock";
 export { default as Gridai } from "./badges/Gridai";
 export { default as Gridsome } from "./badges/Gridsome";
