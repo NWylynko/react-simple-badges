@@ -2313,6 +2313,7 @@ export { default as Workplace } from "./badges/Workplace";
 export { default as WorldHealthOrganization } from "./badges/WorldHealthOrganization";
 export { default as WPEngine } from "./badges/WPEngine";
 export { default as WPRocket } from "./badges/WPRocket";
+export { default as WPExplorer } from "./badges/WPExplorer";
 export { default as Writeas } from "./badges/Writeas";
 export { default as WWE } from "./badges/WWE";
 export { default as Wwise } from "./badges/Wwise";
