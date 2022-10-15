@@ -640,6 +640,7 @@ export { default as Emby } from "./badges/Emby";
 export { default as Emirates } from "./badges/Emirates";
 export { default as Emlakjet } from "./badges/Emlakjet";
 export { default as EmpireKred } from "./badges/EmpireKred";
+export { default as Engadget } from "./badges/Engadget";
 export { default as Enpass } from "./badges/Enpass";
 export { default as EnterpriseDB } from "./badges/EnterpriseDB";
 export { default as Envato } from "./badges/Envato";
