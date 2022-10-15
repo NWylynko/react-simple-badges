@@ -7,13 +7,9 @@
   "license": "MIT",
   "repository": "NWylynko/react-simple-badges",
   "exports": {
-    "./*": {
-      "types": "./dist/esm/badges/*.d.ts",
-      "node": {
-        "require": "./dist/cjs/badges/*.js",
-        "import": "./dist/es2015/badges/*.js"
-      },
-      "default": "./dist/esm/badges/*.js"
+    "./dist/badges/*": {
+      "types": "./dist/badges/*.d.ts",
+      "default": "./dist/badges/*.js"
     },
     "./package.json": "./package.json"
   },
@@ -22,10 +18,7 @@
     "node": ">=14"
   },
   "scripts": {
-    "build": "run-p build:*",
-    "build:es2015": "tsc --module es2015 --target es2015 --outDir dist/es2015",
-    "build:esm": "tsc --declaration --module es2015 --target es5 --outDir dist/esm",
-    "build:cjs": "tsc --module commonjs --target es5 --outDir dist/cjs",
+    "build": "tsc",
     "dev": "tsc -w",
     "release": "bumpp --commit --push --tag",
     "fetchColours": "cd fetchColours && yarn install && yarn build && yarn start",

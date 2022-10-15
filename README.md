@@ -30,10 +30,10 @@ A Component that renders an image of a badge from shields.io using simpleicons.o
 ``` jsx markdown-add-files
 import React from 'react'
 
-import NodeJs from "react-simple-badges/Nodejs";
-import YouTubeGaming from "react-simple-badges/YouTubeGaming";
-import Valve from "react-simple-badges/Valve";
-import Tesla from "react-simple-badges/Tesla";
+import NodeJs from "react-simple-badges/dist/badges/Nodejs";
+import YouTubeGaming from "react-simple-badges/dist/badges/YouTubeGaming";
+import Valve from "react-simple-badges/dist/badges/Valve";
+import Tesla from "react-simple-badges/dist/badges/Tesla";
 
 const App = () => {
   return (

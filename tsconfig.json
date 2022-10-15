@@ -7,10 +7,10 @@
       "dom.iterable",
       "esnext"
     ],
-    "moduleResolution": "Node16",
+    "moduleResolution": "node",
     "jsx": "react",
     "sourceMap": false,
-    "declaration": false,
+    "declaration": true,
     "esModuleInterop": true,
     "noImplicitReturns": true,
     "noImplicitThis": true,
