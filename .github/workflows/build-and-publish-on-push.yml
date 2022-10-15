@@ -10,8 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
-      - uses: nwylynko/markdown-add-files@master
-      - uses: nwylynko/markdown-code-runner@master
+      # - uses: nwylynko/markdown-add-files@master
+      # - uses: nwylynko/markdown-code-runner@master
       - uses: actions/setup-node@master
         with:
           node-version: 16.13.2
