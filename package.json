@@ -10,6 +10,7 @@
   "module": "dist/index.modern.js",
   "unpkg": "dist/index.umd.js",
   "source": "src/index.tsx",
+  "sideEffects": false,
   "engines": {
     "node": ">=10"
   },
