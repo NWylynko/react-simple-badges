@@ -7,7 +7,11 @@
   "license": "MIT",
   "repository": "NWylynko/react-simple-badges",
   "exports": {
-    "./*": "./dist/badges/*.js"
+    "./*": {
+      "types": "./dist/badges/*.d.ts",
+      "default": "./dist/badges/*.js"
+    },
+    "./package.json": "./package.json"
   },
   "sideEffects": false,
   "engines": {
