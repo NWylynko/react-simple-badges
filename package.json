@@ -40,6 +40,6 @@
   "files": [
     "dist"
   ],
-  "dependencies": {}
+  "dependencies": {},
   "types": "./dist/empty.d.ts"
 }
