@@ -1,7 +1,7 @@
 {
   "name": "react-simple-badges",
   "type": "module",
-  "version": "3.1.0-beta.5",
+  "version": "3.1.0-beta.6",
   "description": "React badges for your Profile and Projects.",
   "author": "NWylynko",
   "license": "MIT",
@@ -38,8 +38,9 @@
     "typescript": "^4.8.4"
   },
   "files": [
-    "dist"
+    "dist",
+    "empty.d.ts"
   ],
   "dependencies": {},
-  "types": "./dist/empty.d.ts"
+  "types": "./empty.d.ts"
 }
