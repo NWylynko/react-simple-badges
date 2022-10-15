@@ -1,7 +1,7 @@
 {
   "name": "react-simple-badges",
   "type": "module",
-  "version": "3.0.1-beta.4",
+  "version": "3.0.1",
   "description": "React badges for your Profile and Projects.",
   "author": "NWylynko",
   "license": "MIT",
