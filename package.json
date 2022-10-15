@@ -8,17 +8,24 @@
   "repository": "NWylynko/react-simple-badges",
   "exports": {
     "./*": {
-      "types": "./dist/badges/*.d.ts",
-      "default": "./dist/badges/*.js"
+      "types": "./dist/esm/badges/*.d.ts",
+      "node": {
+        "require": "./dist/cjs/badges/*.js",
+        "import": "./dist/es2015/badges/*.js"
+      },
+      "default": "./dist/esm/badges/*.js"
     },
     "./package.json": "./package.json"
   },
   "sideEffects": false,
   "engines": {
-    "node": ">=10"
+    "node": ">=14"
   },
   "scripts": {
-    "build": "tsc",
+    "build": "run-p build:*",
+    "build:es2015": "tsc --module es2015 --target es2015 --outDir dist/es2015",
+    "build:esm": "tsc --declaration --module es2015 --target es5 --outDir dist/esm",
+    "build:cjs": "tsc --module commonjs --target es5 --outDir dist/cjs",
     "dev": "tsc -w",
     "release": "bumpp --commit --push --tag",
     "fetchColours": "cd fetchColours && yarn install && yarn build && yarn start",
@@ -35,7 +42,8 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "^5.0.0",
-    "typescript": "^4.8.4"
+    "typescript": "^4.8.4",
+    "npm-run-all": "^4.1.5"
   },
   "files": [
     "dist",
