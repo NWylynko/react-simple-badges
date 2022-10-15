@@ -21,7 +21,7 @@
     "generateBadges": "cd generateBadges && yarn install && yarn build && yarn start"
   },
   "peerDependencies": {
-    "react": "^16.0.0"
+    "react": ">16.0.0"
   },
   "devDependencies": {
     "@types/node": "^17.0.23",
