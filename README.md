@@ -30,15 +30,18 @@ A Component that renders an image of a badge from shields.io using simpleicons.o
 ``` jsx markdown-add-files
 import React from 'react'
 
-import Badge from 'react-simple-badges'
+import NodeJs from "react-simple-badges/Nodejs";
+import YouTubeGaming from "react-simple-badges/YouTubeGaming";
+import Valve from "react-simple-badges/Valve";
+import Tesla from "react-simple-badges/Tesla";
 
 const App = () => {
   return (
     <>
-      <Badge name="node.js" style={{width: 200}} logoColor="#eb4034" />
-      <Badge name="YouTube Gaming" label="Youtube" />
-      <Badge name="Valve" label="Steamy Boi" style={{padding: 10}} />
-      <Badge name="Tesla" backgroundColor="#32a853" />
+      <NodeJs style={{width: 200}} logoColor="#eb4034" />
+      <YouTubeGaming label="Youtube" />
+      <Valve label="Value Please fix" style={{padding: 10}} />
+      <Tesla backgroundColor="#32a853" />
     </>
   )
 }
@@ -60,7 +63,7 @@ export default App
 
 <!-- markdown-code-runner image-end -->
 
-[Example project on stackblitz.com](https://stackblitz.com/edit/react-ejp4ec?embed=1&file=src/App.js&hideExplorer=1&hideNavigation=1&view=preview)
+[Example project on stackblitz.com](https://stackblitz.com/edit/react-ts-jdouze?file=package.json,App.tsx,style.css,index.tsx)
 
 ## props for `<Badge />`
 

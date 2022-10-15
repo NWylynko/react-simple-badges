@@ -6,10 +6,9 @@
   "author": "NWylynko",
   "license": "MIT",
   "repository": "NWylynko/react-simple-badges",
-  "main": "dist/index.js",
-  "module": "dist/index.modern.js",
-  "unpkg": "dist/index.umd.js",
-  "source": "src/index.tsx",
+  "exports": {
+    "./*": "./dist/badges/*.js"
+  },
   "sideEffects": false,
   "engines": {
     "node": ">=10"
