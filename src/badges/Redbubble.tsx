@@ -1,7 +1,7 @@
 
 import React from "react"
 import { Badge } from "../badge.js"
-import type { BadgeProps } from "../badge"
+import type { BadgeProps } from "../badge.js"
 
 const Redbubble = (props: BadgeProps) => <Badge name="Redbubble" backgroundColor="#E41321" {...props} />
 

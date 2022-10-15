@@ -1,7 +1,7 @@
 
 import React from "react"
 import { Badge } from "../badge.js"
-import type { BadgeProps } from "../badge"
+import type { BadgeProps } from "../badge.js"
 
 const YouTubeStudio = (props: BadgeProps) => <Badge name="YouTube Studio" backgroundColor="#FF0000" {...props} />
 

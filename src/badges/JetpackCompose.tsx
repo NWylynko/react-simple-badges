@@ -1,7 +1,7 @@
 
 import React from "react"
 import { Badge } from "../badge.js"
-import type { BadgeProps } from "../badge"
+import type { BadgeProps } from "../badge.js"
 
 const JetpackCompose = (props: BadgeProps) => <Badge name="Jetpack Compose" backgroundColor="#4285F4" {...props} />
 

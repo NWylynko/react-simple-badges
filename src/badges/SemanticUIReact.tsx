@@ -1,7 +1,7 @@
 
 import React from "react"
 import { Badge } from "../badge.js"
-import type { BadgeProps } from "../badge"
+import type { BadgeProps } from "../badge.js"
 
 const SemanticUIReact = (props: BadgeProps) => <Badge name="Semantic UI React" backgroundColor="#35BDB2" {...props} />
 

@@ -1,7 +1,7 @@
 
 import React from "react"
 import { Badge } from "../badge.js"
-import type { BadgeProps } from "../badge"
+import type { BadgeProps } from "../badge.js"
 
 const SparkPost = (props: BadgeProps) => <Badge name="SparkPost" backgroundColor="#FA6423" {...props} />
 

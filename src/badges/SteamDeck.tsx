@@ -1,7 +1,7 @@
 
 import React from "react"
 import { Badge } from "../badge.js"
-import type { BadgeProps } from "../badge"
+import type { BadgeProps } from "../badge.js"
 
 const SteamDeck = (props: BadgeProps) => <Badge name="Steam Deck" backgroundColor="#1A9FFF" {...props} />
 

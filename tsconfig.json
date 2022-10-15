@@ -6,7 +6,7 @@
       "dom",
       "esnext"
     ],
-    "moduleResolution": "node",
+    "moduleResolution": "Node16",
     "jsx": "react",
     "sourceMap": true,
     "declaration": true,
@@ -19,7 +19,7 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "allowSyntheticDefaultImports": true,
-    "target": "es6",
+    "target": "ES5",
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,

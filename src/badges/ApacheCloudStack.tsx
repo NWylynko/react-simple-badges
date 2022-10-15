@@ -1,7 +1,7 @@
 
 import React from "react"
 import { Badge } from "../badge.js"
-import type { BadgeProps } from "../badge"
+import type { BadgeProps } from "../badge.js"
 
 const ApacheCloudStack = (props: BadgeProps) => <Badge name="Apache CloudStack" backgroundColor="#2AA5DC" {...props} />
 

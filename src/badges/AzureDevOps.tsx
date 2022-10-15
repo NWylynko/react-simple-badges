@@ -1,7 +1,7 @@
 
 import React from "react"
 import { Badge } from "../badge.js"
-import type { BadgeProps } from "../badge"
+import type { BadgeProps } from "../badge.js"
 
 const AzureDevOps = (props: BadgeProps) => <Badge name="Azure DevOps" backgroundColor="#0078D7" {...props} />
 

@@ -7,7 +7,7 @@ export const writeBadge = (badgesPath: string) => async ({name, label, hex}: Ico
   const template = `
 import React from "react"
 import { Badge } from "../badge.js"
-import type { BadgeProps } from "../badge"
+import type { BadgeProps } from "../badge.js"
 
 const ${name} = (props: BadgeProps) => <Badge name="${label}" backgroundColor="${hex}" {...props} />
 

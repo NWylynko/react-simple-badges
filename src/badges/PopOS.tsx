@@ -1,7 +1,7 @@
 
 import React from "react"
 import { Badge } from "../badge.js"
-import type { BadgeProps } from "../badge"
+import type { BadgeProps } from "../badge.js"
 
 const PopOS = (props: BadgeProps) => <Badge name="Pop!_OS" backgroundColor="#48B9C7" {...props} />
 

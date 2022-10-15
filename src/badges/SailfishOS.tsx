@@ -1,7 +1,7 @@
 
 import React from "react"
 import { Badge } from "../badge.js"
-import type { BadgeProps } from "../badge"
+import type { BadgeProps } from "../badge.js"
 
 const SailfishOS = (props: BadgeProps) => <Badge name="Sailfish OS" backgroundColor="#053766" {...props} />
 

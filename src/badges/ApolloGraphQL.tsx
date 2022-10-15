@@ -1,7 +1,7 @@
 
 import React from "react"
 import { Badge } from "../badge.js"
-import type { BadgeProps } from "../badge"
+import type { BadgeProps } from "../badge.js"
 
 const ApolloGraphQL = (props: BadgeProps) => <Badge name="Apollo GraphQL" backgroundColor="#311C87" {...props} />
 

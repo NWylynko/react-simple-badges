@@ -1,7 +1,7 @@
 
 import React from "react"
 import { Badge } from "../badge.js"
-import type { BadgeProps } from "../badge"
+import type { BadgeProps } from "../badge.js"
 
 const Wix = (props: BadgeProps) => <Badge name="Wix" backgroundColor="#0C6EFC" {...props} />
 

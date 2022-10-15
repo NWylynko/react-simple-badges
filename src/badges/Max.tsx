@@ -1,7 +1,7 @@
 
 import React from "react"
 import { Badge } from "../badge.js"
-import type { BadgeProps } from "../badge"
+import type { BadgeProps } from "../badge.js"
 
 const Max = (props: BadgeProps) => <Badge name="Max" backgroundColor="#525252" {...props} />
 

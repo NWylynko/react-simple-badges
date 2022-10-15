@@ -1,7 +1,7 @@
 
 import React from "react"
 import { Badge } from "../badge.js"
-import type { BadgeProps } from "../badge"
+import type { BadgeProps } from "../badge.js"
 
 const KarlsruherVerkehrsverbund = (props: BadgeProps) => <Badge name="Karlsruher Verkehrsverbund" backgroundColor="#9B2321" {...props} />
 
