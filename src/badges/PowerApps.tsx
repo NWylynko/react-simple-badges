@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const PowerApps = (props: BadgeProps) => <Badge name="Power Apps" {...props} backgroundColor="#742774" />
+const PowerApps = (props: BadgeProps) => <Badge name="Power Apps" backgroundColor="#742774" {...props} />
 
 export default PowerApps

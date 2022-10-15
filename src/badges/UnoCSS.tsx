@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const UnoCSS = (props: BadgeProps) => <Badge name="UnoCSS" {...props} backgroundColor="#333333" />
+const UnoCSS = (props: BadgeProps) => <Badge name="UnoCSS" backgroundColor="#333333" {...props} />
 
 export default UnoCSS

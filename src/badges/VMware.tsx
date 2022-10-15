@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const VMware = (props: BadgeProps) => <Badge name="VMware" {...props} backgroundColor="#607078" />
+const VMware = (props: BadgeProps) => <Badge name="VMware" backgroundColor="#607078" {...props} />
 
 export default VMware

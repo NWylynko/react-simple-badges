@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const SemanticScholar = (props: BadgeProps) => <Badge name="Semantic Scholar" {...props} backgroundColor="#1857B6" />
+const SemanticScholar = (props: BadgeProps) => <Badge name="Semantic Scholar" backgroundColor="#1857B6" {...props} />
 
 export default SemanticScholar

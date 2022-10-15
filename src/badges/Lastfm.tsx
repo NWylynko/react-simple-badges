@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const Lastfm = (props: BadgeProps) => <Badge name="Last.fm" {...props} backgroundColor="#D51007" />
+const Lastfm = (props: BadgeProps) => <Badge name="Last.fm" backgroundColor="#D51007" {...props} />
 
 export default Lastfm

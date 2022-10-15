@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const Kubernetes = (props: BadgeProps) => <Badge name="Kubernetes" {...props} backgroundColor="#326CE5" />
+const Kubernetes = (props: BadgeProps) => <Badge name="Kubernetes" backgroundColor="#326CE5" {...props} />
 
 export default Kubernetes

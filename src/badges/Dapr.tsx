@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const Dapr = (props: BadgeProps) => <Badge name="Dapr" {...props} backgroundColor="#0D2192" />
+const Dapr = (props: BadgeProps) => <Badge name="Dapr" backgroundColor="#0D2192" {...props} />
 
 export default Dapr

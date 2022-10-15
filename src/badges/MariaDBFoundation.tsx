@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const MariaDBFoundation = (props: BadgeProps) => <Badge name="MariaDB Foundation" {...props} backgroundColor="#1F305F" />
+const MariaDBFoundation = (props: BadgeProps) => <Badge name="MariaDB Foundation" backgroundColor="#1F305F" {...props} />
 
 export default MariaDBFoundation

@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const NintendoGameCube = (props: BadgeProps) => <Badge name="Nintendo GameCube" {...props} backgroundColor="#6A5FBB" />
+const NintendoGameCube = (props: BadgeProps) => <Badge name="Nintendo GameCube" backgroundColor="#6A5FBB" {...props} />
 
 export default NintendoGameCube

@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const QEMU = (props: BadgeProps) => <Badge name="QEMU" {...props} backgroundColor="#FF6600" />
+const QEMU = (props: BadgeProps) => <Badge name="QEMU" backgroundColor="#FF6600" {...props} />
 
 export default QEMU

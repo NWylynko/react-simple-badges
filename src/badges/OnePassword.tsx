@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const OnePassword = (props: BadgeProps) => <Badge name="1Password" {...props} backgroundColor="#0094F5" />
+const OnePassword = (props: BadgeProps) => <Badge name="1Password" backgroundColor="#0094F5" {...props} />
 
 export default OnePassword

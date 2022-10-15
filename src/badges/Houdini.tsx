@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const Houdini = (props: BadgeProps) => <Badge name="Houdini" {...props} backgroundColor="#FF4713" />
+const Houdini = (props: BadgeProps) => <Badge name="Houdini" backgroundColor="#FF4713" {...props} />
 
 export default Houdini

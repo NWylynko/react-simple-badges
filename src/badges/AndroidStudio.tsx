@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const AndroidStudio = (props: BadgeProps) => <Badge name="Android Studio" {...props} backgroundColor="#3DDC84" />
+const AndroidStudio = (props: BadgeProps) => <Badge name="Android Studio" backgroundColor="#3DDC84" {...props} />
 
 export default AndroidStudio

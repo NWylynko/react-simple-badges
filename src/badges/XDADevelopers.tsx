@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const XDADevelopers = (props: BadgeProps) => <Badge name="XDA Developers" {...props} backgroundColor="#EA7100" />
+const XDADevelopers = (props: BadgeProps) => <Badge name="XDA Developers" backgroundColor="#EA7100" {...props} />
 
 export default XDADevelopers

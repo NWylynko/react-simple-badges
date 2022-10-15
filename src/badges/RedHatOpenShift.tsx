@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const RedHatOpenShift = (props: BadgeProps) => <Badge name="Red Hat Open Shift" {...props} backgroundColor="#EE0000" />
+const RedHatOpenShift = (props: BadgeProps) => <Badge name="Red Hat Open Shift" backgroundColor="#EE0000" {...props} />
 
 export default RedHatOpenShift

@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const SonarCloud = (props: BadgeProps) => <Badge name="SonarCloud" {...props} backgroundColor="#F3702A" />
+const SonarCloud = (props: BadgeProps) => <Badge name="SonarCloud" backgroundColor="#F3702A" {...props} />
 
 export default SonarCloud

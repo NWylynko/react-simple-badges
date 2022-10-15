@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const Oracle = (props: BadgeProps) => <Badge name="Oracle" {...props} backgroundColor="#F80000" />
+const Oracle = (props: BadgeProps) => <Badge name="Oracle" backgroundColor="#F80000" {...props} />
 
 export default Oracle

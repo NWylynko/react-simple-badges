@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const GoogleMeet = (props: BadgeProps) => <Badge name="Google Meet" {...props} backgroundColor="#00897B" />
+const GoogleMeet = (props: BadgeProps) => <Badge name="Google Meet" backgroundColor="#00897B" {...props} />
 
 export default GoogleMeet

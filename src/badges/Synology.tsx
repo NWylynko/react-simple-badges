@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const Synology = (props: BadgeProps) => <Badge name="Synology" {...props} backgroundColor="#B5B5B6" />
+const Synology = (props: BadgeProps) => <Badge name="Synology" backgroundColor="#B5B5B6" {...props} />
 
 export default Synology

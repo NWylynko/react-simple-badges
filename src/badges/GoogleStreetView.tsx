@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const GoogleStreetView = (props: BadgeProps) => <Badge name="Google Street View" {...props} backgroundColor="#FEC111" />
+const GoogleStreetView = (props: BadgeProps) => <Badge name="Google Street View" backgroundColor="#FEC111" {...props} />
 
 export default GoogleStreetView

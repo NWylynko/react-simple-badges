@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const JiraSoftware = (props: BadgeProps) => <Badge name="Jira Software" {...props} backgroundColor="#0052CC" />
+const JiraSoftware = (props: BadgeProps) => <Badge name="Jira Software" backgroundColor="#0052CC" {...props} />
 
 export default JiraSoftware

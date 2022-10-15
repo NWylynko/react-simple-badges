@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const MSI = (props: BadgeProps) => <Badge name="MSI" {...props} backgroundColor="#FF0000" />
+const MSI = (props: BadgeProps) => <Badge name="MSI" backgroundColor="#FF0000" {...props} />
 
 export default MSI

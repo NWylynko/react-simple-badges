@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const Chainlink = (props: BadgeProps) => <Badge name="Chainlink" {...props} backgroundColor="#375BD2" />
+const Chainlink = (props: BadgeProps) => <Badge name="Chainlink" backgroundColor="#375BD2" {...props} />
 
 export default Chainlink

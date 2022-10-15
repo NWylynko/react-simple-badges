@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const PySyft = (props: BadgeProps) => <Badge name="PySyft" {...props} backgroundColor="#F1BF7A" />
+const PySyft = (props: BadgeProps) => <Badge name="PySyft" backgroundColor="#F1BF7A" {...props} />
 
 export default PySyft

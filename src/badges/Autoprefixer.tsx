@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const Autoprefixer = (props: BadgeProps) => <Badge name="Autoprefixer" {...props} backgroundColor="#DD3735" />
+const Autoprefixer = (props: BadgeProps) => <Badge name="Autoprefixer" backgroundColor="#DD3735" {...props} />
 
 export default Autoprefixer

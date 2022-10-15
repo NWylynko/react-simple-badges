@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const ArchiveofOurOwn = (props: BadgeProps) => <Badge name="Archive of Our Own" {...props} backgroundColor="#990000" />
+const ArchiveofOurOwn = (props: BadgeProps) => <Badge name="Archive of Our Own" backgroundColor="#990000" {...props} />
 
 export default ArchiveofOurOwn

@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const ApacheSpark = (props: BadgeProps) => <Badge name="Apache Spark" {...props} backgroundColor="#E25A1C" />
+const ApacheSpark = (props: BadgeProps) => <Badge name="Apache Spark" backgroundColor="#E25A1C" {...props} />
 
 export default ApacheSpark

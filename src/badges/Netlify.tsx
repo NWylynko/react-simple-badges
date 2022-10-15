@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const Netlify = (props: BadgeProps) => <Badge name="Netlify" {...props} backgroundColor="#00C7B7" />
+const Netlify = (props: BadgeProps) => <Badge name="Netlify" backgroundColor="#00C7B7" {...props} />
 
 export default Netlify

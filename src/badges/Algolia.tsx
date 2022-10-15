@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const Algolia = (props: BadgeProps) => <Badge name="Algolia" {...props} backgroundColor="#5468FF" />
+const Algolia = (props: BadgeProps) => <Badge name="Algolia" backgroundColor="#5468FF" {...props} />
 
 export default Algolia

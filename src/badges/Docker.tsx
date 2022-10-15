@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const Docker = (props: BadgeProps) => <Badge name="Docker" {...props} backgroundColor="#2496ED" />
+const Docker = (props: BadgeProps) => <Badge name="Docker" backgroundColor="#2496ED" {...props} />
 
 export default Docker

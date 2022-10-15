@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const AmazonPay = (props: BadgeProps) => <Badge name="Amazon Pay" {...props} backgroundColor="#FF9900" />
+const AmazonPay = (props: BadgeProps) => <Badge name="Amazon Pay" backgroundColor="#FF9900" {...props} />
 
 export default AmazonPay

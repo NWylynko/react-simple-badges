@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const Integromat = (props: BadgeProps) => <Badge name="Integromat" {...props} backgroundColor="#2F8CBB" />
+const Integromat = (props: BadgeProps) => <Badge name="Integromat" backgroundColor="#2F8CBB" {...props} />
 
 export default Integromat

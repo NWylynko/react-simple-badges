@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const Threadless = (props: BadgeProps) => <Badge name="Threadless" {...props} backgroundColor="#0099FF" />
+const Threadless = (props: BadgeProps) => <Badge name="Threadless" backgroundColor="#0099FF" {...props} />
 
 export default Threadless

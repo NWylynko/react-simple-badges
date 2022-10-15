@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const PlausibleAnalytics = (props: BadgeProps) => <Badge name="Plausible Analytics" {...props} backgroundColor="#5850EC" />
+const PlausibleAnalytics = (props: BadgeProps) => <Badge name="Plausible Analytics" backgroundColor="#5850EC" {...props} />
 
 export default PlausibleAnalytics

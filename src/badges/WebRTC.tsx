@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const WebRTC = (props: BadgeProps) => <Badge name="WebRTC" {...props} backgroundColor="#333333" />
+const WebRTC = (props: BadgeProps) => <Badge name="WebRTC" backgroundColor="#333333" {...props} />
 
 export default WebRTC

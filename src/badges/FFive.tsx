@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const FFive = (props: BadgeProps) => <Badge name="F5" {...props} backgroundColor="#E4002B" />
+const FFive = (props: BadgeProps) => <Badge name="F5" backgroundColor="#E4002B" {...props} />
 
 export default FFive

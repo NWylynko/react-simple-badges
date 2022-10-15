@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const RabbitMQ = (props: BadgeProps) => <Badge name="RabbitMQ" {...props} backgroundColor="#FF6600" />
+const RabbitMQ = (props: BadgeProps) => <Badge name="RabbitMQ" backgroundColor="#FF6600" {...props} />
 
 export default RabbitMQ

@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const OpenWrt = (props: BadgeProps) => <Badge name="OpenWrt" {...props} backgroundColor="#00B5E2" />
+const OpenWrt = (props: BadgeProps) => <Badge name="OpenWrt" backgroundColor="#00B5E2" {...props} />
 
 export default OpenWrt

@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const Laravel = (props: BadgeProps) => <Badge name="Laravel" {...props} backgroundColor="#FF2D20" />
+const Laravel = (props: BadgeProps) => <Badge name="Laravel" backgroundColor="#FF2D20" {...props} />
 
 export default Laravel

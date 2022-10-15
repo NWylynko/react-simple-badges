@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const WhatsApp = (props: BadgeProps) => <Badge name="WhatsApp" {...props} backgroundColor="#25D366" />
+const WhatsApp = (props: BadgeProps) => <Badge name="WhatsApp" backgroundColor="#25D366" {...props} />
 
 export default WhatsApp

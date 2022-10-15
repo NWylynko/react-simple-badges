@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const PowerShell = (props: BadgeProps) => <Badge name="PowerShell" {...props} backgroundColor="#5391FE" />
+const PowerShell = (props: BadgeProps) => <Badge name="PowerShell" backgroundColor="#5391FE" {...props} />
 
 export default PowerShell

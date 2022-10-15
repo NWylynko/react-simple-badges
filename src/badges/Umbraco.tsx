@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const Umbraco = (props: BadgeProps) => <Badge name="Umbraco" {...props} backgroundColor="#3544B1" />
+const Umbraco = (props: BadgeProps) => <Badge name="Umbraco" backgroundColor="#3544B1" {...props} />
 
 export default Umbraco

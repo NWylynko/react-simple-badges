@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const Openverse = (props: BadgeProps) => <Badge name="Openverse" {...props} backgroundColor="#FFE033" />
+const Openverse = (props: BadgeProps) => <Badge name="Openverse" backgroundColor="#FFE033" {...props} />
 
 export default Openverse

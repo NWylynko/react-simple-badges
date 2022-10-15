@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const RetroPie = (props: BadgeProps) => <Badge name="RetroPie" {...props} backgroundColor="#CC0000" />
+const RetroPie = (props: BadgeProps) => <Badge name="RetroPie" backgroundColor="#CC0000" {...props} />
 
 export default RetroPie

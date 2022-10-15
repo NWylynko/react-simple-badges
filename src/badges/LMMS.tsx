@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const LMMS = (props: BadgeProps) => <Badge name="LMMS" {...props} backgroundColor="#10B146" />
+const LMMS = (props: BadgeProps) => <Badge name="LMMS" backgroundColor="#10B146" {...props} />
 
 export default LMMS

@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const Nextcloud = (props: BadgeProps) => <Badge name="Nextcloud" {...props} backgroundColor="#0082C9" />
+const Nextcloud = (props: BadgeProps) => <Badge name="Nextcloud" backgroundColor="#0082C9" {...props} />
 
 export default Nextcloud

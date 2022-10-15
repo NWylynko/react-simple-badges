@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const QuickLook = (props: BadgeProps) => <Badge name="QuickLook" {...props} backgroundColor="#22A2E3" />
+const QuickLook = (props: BadgeProps) => <Badge name="QuickLook" backgroundColor="#22A2E3" {...props} />
 
 export default QuickLook

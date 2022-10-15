@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const AdobeIllustrator = (props: BadgeProps) => <Badge name="Adobe Illustrator" {...props} backgroundColor="#FF9A00" />
+const AdobeIllustrator = (props: BadgeProps) => <Badge name="Adobe Illustrator" backgroundColor="#FF9A00" {...props} />
 
 export default AdobeIllustrator

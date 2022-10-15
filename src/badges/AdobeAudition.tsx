@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const AdobeAudition = (props: BadgeProps) => <Badge name="Adobe Audition" {...props} backgroundColor="#9999FF" />
+const AdobeAudition = (props: BadgeProps) => <Badge name="Adobe Audition" backgroundColor="#9999FF" {...props} />
 
 export default AdobeAudition

@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const MySQL = (props: BadgeProps) => <Badge name="MySQL" {...props} backgroundColor="#4479A1" />
+const MySQL = (props: BadgeProps) => <Badge name="MySQL" backgroundColor="#4479A1" {...props} />
 
 export default MySQL

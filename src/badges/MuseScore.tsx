@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const MuseScore = (props: BadgeProps) => <Badge name="MuseScore" {...props} backgroundColor="#1A70B8" />
+const MuseScore = (props: BadgeProps) => <Badge name="MuseScore" backgroundColor="#1A70B8" {...props} />
 
 export default MuseScore

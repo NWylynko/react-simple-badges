@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const NFC = (props: BadgeProps) => <Badge name="NFC" {...props} backgroundColor="#002E5F" />
+const NFC = (props: BadgeProps) => <Badge name="NFC" backgroundColor="#002E5F" {...props} />
 
 export default NFC

@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const RunKit = (props: BadgeProps) => <Badge name="RunKit" {...props} backgroundColor="#491757" />
+const RunKit = (props: BadgeProps) => <Badge name="RunKit" backgroundColor="#491757" {...props} />
 
 export default RunKit

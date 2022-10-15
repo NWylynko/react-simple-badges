@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const AzureFunctions = (props: BadgeProps) => <Badge name="Azure Functions" {...props} backgroundColor="#0062AD" />
+const AzureFunctions = (props: BadgeProps) => <Badge name="Azure Functions" backgroundColor="#0062AD" {...props} />
 
 export default AzureFunctions

@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const VEXXHOST = (props: BadgeProps) => <Badge name="VEXXHOST" {...props} backgroundColor="#2A1659" />
+const VEXXHOST = (props: BadgeProps) => <Badge name="VEXXHOST" backgroundColor="#2A1659" {...props} />
 
 export default VEXXHOST

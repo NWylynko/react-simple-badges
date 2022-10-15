@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const MailRu = (props: BadgeProps) => <Badge name="Mail.Ru" {...props} backgroundColor="#005FF9" />
+const MailRu = (props: BadgeProps) => <Badge name="Mail.Ru" backgroundColor="#005FF9" {...props} />
 
 export default MailRu

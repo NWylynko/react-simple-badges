@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const Groupon = (props: BadgeProps) => <Badge name="Groupon" {...props} backgroundColor="#53A318" />
+const Groupon = (props: BadgeProps) => <Badge name="Groupon" backgroundColor="#53A318" {...props} />
 
 export default Groupon

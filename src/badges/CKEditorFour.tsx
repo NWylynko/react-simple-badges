@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const CKEditorFour = (props: BadgeProps) => <Badge name="CKEditor 4" {...props} backgroundColor="#0287D0" />
+const CKEditorFour = (props: BadgeProps) => <Badge name="CKEditor 4" backgroundColor="#0287D0" {...props} />
 
 export default CKEditorFour

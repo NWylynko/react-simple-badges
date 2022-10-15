@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const WebAuthn = (props: BadgeProps) => <Badge name="WebAuthn" {...props} backgroundColor="#3423A6" />
+const WebAuthn = (props: BadgeProps) => <Badge name="WebAuthn" backgroundColor="#3423A6" {...props} />
 
 export default WebAuthn

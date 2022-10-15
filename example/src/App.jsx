@@ -10,7 +10,7 @@ const App = () => {
     <>
       <NodeJs style={{width: 200}} logoColor="#eb4034" />
       <YouTubeGaming label="Youtube" />
-      <Valve label="Steamy Boi" style={{padding: 10}} />
+      <Valve label="Value Please fix" style={{padding: 10}} />
       <Tesla backgroundColor="#32a853" />
     </>
   )

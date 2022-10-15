@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const CloudFoundry = (props: BadgeProps) => <Badge name="Cloud Foundry" {...props} backgroundColor="#0C9ED5" />
+const CloudFoundry = (props: BadgeProps) => <Badge name="Cloud Foundry" backgroundColor="#0C9ED5" {...props} />
 
 export default CloudFoundry

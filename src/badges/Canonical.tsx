@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const Canonical = (props: BadgeProps) => <Badge name="Canonical" {...props} backgroundColor="#77216F" />
+const Canonical = (props: BadgeProps) => <Badge name="Canonical" backgroundColor="#77216F" {...props} />
 
 export default Canonical

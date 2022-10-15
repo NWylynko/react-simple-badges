@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const IBMCloud = (props: BadgeProps) => <Badge name="IBM Cloud" {...props} backgroundColor="#1261FE" />
+const IBMCloud = (props: BadgeProps) => <Badge name="IBM Cloud" backgroundColor="#1261FE" {...props} />
 
 export default IBMCloud

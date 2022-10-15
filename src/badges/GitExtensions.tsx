@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const GitExtensions = (props: BadgeProps) => <Badge name="Git Extensions" {...props} backgroundColor="#212121" />
+const GitExtensions = (props: BadgeProps) => <Badge name="Git Extensions" backgroundColor="#212121" {...props} />
 
 export default GitExtensions

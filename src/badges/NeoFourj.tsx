@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const NeoFourj = (props: BadgeProps) => <Badge name="Neo4j" {...props} backgroundColor="#4581C3" />
+const NeoFourj = (props: BadgeProps) => <Badge name="Neo4j" backgroundColor="#4581C3" {...props} />
 
 export default NeoFourj

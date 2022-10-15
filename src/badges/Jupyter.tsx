@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const Jupyter = (props: BadgeProps) => <Badge name="Jupyter" {...props} backgroundColor="#F37626" />
+const Jupyter = (props: BadgeProps) => <Badge name="Jupyter" backgroundColor="#F37626" {...props} />
 
 export default Jupyter

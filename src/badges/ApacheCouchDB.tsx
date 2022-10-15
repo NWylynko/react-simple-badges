@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const ApacheCouchDB = (props: BadgeProps) => <Badge name="Apache CouchDB" {...props} backgroundColor="#E42528" />
+const ApacheCouchDB = (props: BadgeProps) => <Badge name="Apache CouchDB" backgroundColor="#E42528" {...props} />
 
 export default ApacheCouchDB

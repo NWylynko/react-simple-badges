@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const SemaphoreCI = (props: BadgeProps) => <Badge name="Semaphore CI" {...props} backgroundColor="#19A974" />
+const SemaphoreCI = (props: BadgeProps) => <Badge name="Semaphore CI" backgroundColor="#19A974" {...props} />
 
 export default SemaphoreCI

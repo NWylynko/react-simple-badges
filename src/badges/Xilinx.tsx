@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const Xilinx = (props: BadgeProps) => <Badge name="Xilinx" {...props} backgroundColor="#E01F27" />
+const Xilinx = (props: BadgeProps) => <Badge name="Xilinx" backgroundColor="#E01F27" {...props} />
 
 export default Xilinx

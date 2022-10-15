@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const Platformsh = (props: BadgeProps) => <Badge name="Platform.sh" {...props} backgroundColor="#1A182A" />
+const Platformsh = (props: BadgeProps) => <Badge name="Platform.sh" backgroundColor="#1A182A" {...props} />
 
 export default Platformsh

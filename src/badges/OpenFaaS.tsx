@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const OpenFaaS = (props: BadgeProps) => <Badge name="OpenFaaS" {...props} backgroundColor="#3B5EE9" />
+const OpenFaaS = (props: BadgeProps) => <Badge name="OpenFaaS" backgroundColor="#3B5EE9" {...props} />
 
 export default OpenFaaS

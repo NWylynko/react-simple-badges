@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const TencentQQ = (props: BadgeProps) => <Badge name="Tencent QQ" {...props} backgroundColor="#EB1923" />
+const TencentQQ = (props: BadgeProps) => <Badge name="Tencent QQ" backgroundColor="#EB1923" {...props} />
 
 export default TencentQQ

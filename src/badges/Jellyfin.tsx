@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const Jellyfin = (props: BadgeProps) => <Badge name="Jellyfin" {...props} backgroundColor="#00A4DC" />
+const Jellyfin = (props: BadgeProps) => <Badge name="Jellyfin" backgroundColor="#00A4DC" {...props} />
 
 export default Jellyfin

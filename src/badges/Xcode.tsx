@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const Xcode = (props: BadgeProps) => <Badge name="Xcode" {...props} backgroundColor="#147EFB" />
+const Xcode = (props: BadgeProps) => <Badge name="Xcode" backgroundColor="#147EFB" {...props} />
 
 export default Xcode

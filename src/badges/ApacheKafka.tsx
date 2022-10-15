@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const ApacheKafka = (props: BadgeProps) => <Badge name="Apache Kafka" {...props} backgroundColor="#231F20" />
+const ApacheKafka = (props: BadgeProps) => <Badge name="Apache Kafka" backgroundColor="#231F20" {...props} />
 
 export default ApacheKafka

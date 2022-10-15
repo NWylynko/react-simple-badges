@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const Curl = (props: BadgeProps) => <Badge name="curl" {...props} backgroundColor="#073551" />
+const Curl = (props: BadgeProps) => <Badge name="curl" backgroundColor="#073551" {...props} />
 
 export default Curl

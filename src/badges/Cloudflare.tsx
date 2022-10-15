@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const Cloudflare = (props: BadgeProps) => <Badge name="Cloudflare" {...props} backgroundColor="#F38020" />
+const Cloudflare = (props: BadgeProps) => <Badge name="Cloudflare" backgroundColor="#F38020" {...props} />
 
 export default Cloudflare

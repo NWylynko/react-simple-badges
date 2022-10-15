@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const Timescale = (props: BadgeProps) => <Badge name="Timescale" {...props} backgroundColor="#FDB515" />
+const Timescale = (props: BadgeProps) => <Badge name="Timescale" backgroundColor="#FDB515" {...props} />
 
 export default Timescale

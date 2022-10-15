@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const ScrollReveal = (props: BadgeProps) => <Badge name="ScrollReveal" {...props} backgroundColor="#FFCB36" />
+const ScrollReveal = (props: BadgeProps) => <Badge name="ScrollReveal" backgroundColor="#FFCB36" {...props} />
 
 export default ScrollReveal

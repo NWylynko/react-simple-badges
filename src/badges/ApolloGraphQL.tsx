@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const ApolloGraphQL = (props: BadgeProps) => <Badge name="Apollo GraphQL" {...props} backgroundColor="#311C87" />
+const ApolloGraphQL = (props: BadgeProps) => <Badge name="Apollo GraphQL" backgroundColor="#311C87" {...props} />
 
 export default ApolloGraphQL

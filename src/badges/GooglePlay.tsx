@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const GooglePlay = (props: BadgeProps) => <Badge name="Google Play" {...props} backgroundColor="#414141" />
+const GooglePlay = (props: BadgeProps) => <Badge name="Google Play" backgroundColor="#414141" {...props} />
 
 export default GooglePlay

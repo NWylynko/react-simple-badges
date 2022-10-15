@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const Xamarin = (props: BadgeProps) => <Badge name="Xamarin" {...props} backgroundColor="#3498DB" />
+const Xamarin = (props: BadgeProps) => <Badge name="Xamarin" backgroundColor="#3498DB" {...props} />
 
 export default Xamarin

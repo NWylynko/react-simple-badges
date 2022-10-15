@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const VimeoLivestream = (props: BadgeProps) => <Badge name="Vimeo Livestream" {...props} backgroundColor="#0A0A20" />
+const VimeoLivestream = (props: BadgeProps) => <Badge name="Vimeo Livestream" backgroundColor="#0A0A20" {...props} />
 
 export default VimeoLivestream

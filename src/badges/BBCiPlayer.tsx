@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const BBCiPlayer = (props: BadgeProps) => <Badge name="BBC iPlayer" {...props} backgroundColor="#F54997" />
+const BBCiPlayer = (props: BadgeProps) => <Badge name="BBC iPlayer" backgroundColor="#F54997" {...props} />
 
 export default BBCiPlayer

@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const MicrosoftExcel = (props: BadgeProps) => <Badge name="Microsoft Excel" {...props} backgroundColor="#217346" />
+const MicrosoftExcel = (props: BadgeProps) => <Badge name="Microsoft Excel" backgroundColor="#217346" {...props} />
 
 export default MicrosoftExcel

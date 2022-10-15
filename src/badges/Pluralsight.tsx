@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const Pluralsight = (props: BadgeProps) => <Badge name="Pluralsight" {...props} backgroundColor="#F15B2A" />
+const Pluralsight = (props: BadgeProps) => <Badge name="Pluralsight" backgroundColor="#F15B2A" {...props} />
 
 export default Pluralsight

@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const XAMPP = (props: BadgeProps) => <Badge name="XAMPP" {...props} backgroundColor="#FB7A24" />
+const XAMPP = (props: BadgeProps) => <Badge name="XAMPP" backgroundColor="#FB7A24" {...props} />
 
 export default XAMPP

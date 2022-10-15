@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const GoogleEarth = (props: BadgeProps) => <Badge name="Google Earth" {...props} backgroundColor="#4285F4" />
+const GoogleEarth = (props: BadgeProps) => <Badge name="Google Earth" backgroundColor="#4285F4" {...props} />
 
 export default GoogleEarth

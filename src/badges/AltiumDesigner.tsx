@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const AltiumDesigner = (props: BadgeProps) => <Badge name="Altium Designer" {...props} backgroundColor="#A5915F" />
+const AltiumDesigner = (props: BadgeProps) => <Badge name="Altium Designer" backgroundColor="#A5915F" {...props} />
 
 export default AltiumDesigner

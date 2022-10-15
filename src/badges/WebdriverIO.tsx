@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const WebdriverIO = (props: BadgeProps) => <Badge name="WebdriverIO" {...props} backgroundColor="#EA5906" />
+const WebdriverIO = (props: BadgeProps) => <Badge name="WebdriverIO" backgroundColor="#EA5906" {...props} />
 
 export default WebdriverIO

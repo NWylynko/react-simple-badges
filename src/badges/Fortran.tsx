@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const Fortran = (props: BadgeProps) => <Badge name="Fortran" {...props} backgroundColor="#734F96" />
+const Fortran = (props: BadgeProps) => <Badge name="Fortran" backgroundColor="#734F96" {...props} />
 
 export default Fortran

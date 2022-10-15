@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const WebGL = (props: BadgeProps) => <Badge name="WebGL" {...props} backgroundColor="#990000" />
+const WebGL = (props: BadgeProps) => <Badge name="WebGL" backgroundColor="#990000" {...props} />
 
 export default WebGL

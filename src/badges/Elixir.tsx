@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const Elixir = (props: BadgeProps) => <Badge name="Elixir" {...props} backgroundColor="#4B275F" />
+const Elixir = (props: BadgeProps) => <Badge name="Elixir" backgroundColor="#4B275F" {...props} />
 
 export default Elixir

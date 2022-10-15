@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const Folium = (props: BadgeProps) => <Badge name="Folium" {...props} backgroundColor="#77B829" />
+const Folium = (props: BadgeProps) => <Badge name="Folium" backgroundColor="#77B829" {...props} />
 
 export default Folium

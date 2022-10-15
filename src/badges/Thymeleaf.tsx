@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const Thymeleaf = (props: BadgeProps) => <Badge name="Thymeleaf" {...props} backgroundColor="#005F0F" />
+const Thymeleaf = (props: BadgeProps) => <Badge name="Thymeleaf" backgroundColor="#005F0F" {...props} />
 
 export default Thymeleaf

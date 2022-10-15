@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const Zend = (props: BadgeProps) => <Badge name="Zend" {...props} backgroundColor="#0679EA" />
+const Zend = (props: BadgeProps) => <Badge name="Zend" backgroundColor="#0679EA" {...props} />
 
 export default Zend

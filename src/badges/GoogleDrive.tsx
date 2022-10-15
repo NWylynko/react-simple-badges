@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const GoogleDrive = (props: BadgeProps) => <Badge name="Google Drive" {...props} backgroundColor="#4285F4" />
+const GoogleDrive = (props: BadgeProps) => <Badge name="Google Drive" backgroundColor="#4285F4" {...props} />
 
 export default GoogleDrive

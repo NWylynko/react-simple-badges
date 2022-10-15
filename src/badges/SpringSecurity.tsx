@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const SpringSecurity = (props: BadgeProps) => <Badge name="Spring Security" {...props} backgroundColor="#6DB33F" />
+const SpringSecurity = (props: BadgeProps) => <Badge name="Spring Security" backgroundColor="#6DB33F" {...props} />
 
 export default SpringSecurity

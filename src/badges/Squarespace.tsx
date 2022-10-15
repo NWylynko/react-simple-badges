@@ -1,8 +1,8 @@
 
 import React from "react"
-import { Badge } from "../badge"
+import { Badge } from "../badge.js"
 import type { BadgeProps } from "../badge"
 
-const Squarespace = (props: BadgeProps) => <Badge name="Squarespace" {...props} backgroundColor="#000000" />
+const Squarespace = (props: BadgeProps) => <Badge name="Squarespace" backgroundColor="#000000" {...props} />
 
 export default Squarespace
