@@ -43,7 +43,7 @@ export default async function HomePage() {
 }
 ```
 
-[Example project on stackblitz.com](https://stackblitz.com/edit/react-ts-jdouze?file=package.json,App.tsx,style.css,index.tsx)
+[Example project on stackblitz.com](https://stackblitz.com/edit/nextjs-mvwvlz?file=app%2Fpage.tsx,app%2Flayout.tsx)
 
 ## props for `<Badge />`
 
