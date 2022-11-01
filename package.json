@@ -27,7 +27,7 @@
     "fetchColours": "cd fetchColours && yarn install && yarn build && yarn start"
   },
   "peerDependencies": {
-    "react": ">18.2.0"
+    "react": ">=18.2.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.24",
