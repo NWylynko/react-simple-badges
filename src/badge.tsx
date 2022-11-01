@@ -2,7 +2,7 @@ import React from "react"
 import type { ClassAttributes, ImgHTMLAttributes } from "react"
 import { isHex } from "./isHex"
 import { badgeSrc } from "./badgeSrc"
-import { IconNames, icons } from "./icons"
+import { type IconNames, icons } from "./icons"
 
 export type BadgeProps = JSX.IntrinsicAttributes &
   ClassAttributes<HTMLImageElement> &

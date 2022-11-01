@@ -6,7 +6,7 @@ export const badgeSrc = ({ title, backgroundColor, logoColor, name }: BadgeSrc) 
     `https://img.shields.io/badge/${encodedTitle} -${backgroundColor}.svg?&style=for-the-badge&logo=${name}&logoColor=${logoColor || 'white'}`
   ).replace(/#/g, '%23');
 };
-interface BadgeSrc {
+export interface BadgeSrc {
   title: string;
   backgroundColor: string;
   logoColor?: string;
