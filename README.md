@@ -18,50 +18,30 @@ npm i react-simple-badges
 yarn add react-simple-badges
 ```
 
+```bash
+bun add react-simple-badges
+```
+
 ## What is this Component?
 
-A Component that renders an image of a badge from shields.io using simpleicons.org list of icons. shields.io doesn't store the primary accent colour of the icon though, simple icons does in a json file. but downloading the whole file (~40kb gziped) is bad for the loading times of a website. so the json file is stored in a [firebase function](https://github.com/NWylynko/business-primary-color) which the component sends a request too with the name of the badge your trying to display. A github action is run every 24 hours checking if the list has been updated and will automatically update the firebase function with the new badges and be published to firebase. Any props passed to the component get passed along to the img element in it so things like style can be applied easily.
-
+A Component that renders an image of a badge from shields.io using simpleicons.org list of icons. Every 24 hours a Github action is run to check for new icons. If their is a new one a new npm module version is released with it. This module is intended to be used as a react server component. Using the new async component. This means it can import the large icons list to get the background color you need but without increasing the end users page load time. But this does mean you need a framework that supports server components and react 18.2.0 or later.
 
 ## Usage
 
-<!-- add-file: ./example/src/App.jsx -->
+``` jsx
+import { Badge } from "react-simple-badges"
 
-``` jsx markdown-add-files
-import React from 'react'
-
-import NodeJs from "react-simple-badges/dist/badges/Nodejs";
-import YouTubeGaming from "react-simple-badges/dist/badges/YouTubeGaming";
-import Valve from "react-simple-badges/dist/badges/Valve";
-import Tesla from "react-simple-badges/dist/badges/Tesla";
-
-const App = () => {
+export default async function HomePage() {
   return (
     <>
-      <NodeJs style={{width: 200}} logoColor="#eb4034" />
-      <YouTubeGaming label="Youtube" />
-      <Valve label="Value Please fix" style={{padding: 10}} />
-      <Tesla backgroundColor="#32a853" />
+      <Badge name="Node.js" style={{width: 200}} logoColor="#eb4034" />
+      <Badge name="YouTube Gaming" label="Youtube" />
+      <Badge name="Valve" label="Value Please fix" style={{padding: 10}} />
+      <Badge name="Tesla" backgroundColor="#32a853" />
     </>
   )
 }
-
-export default App
-
 ```
-<!-- markdown-code-runner
-  {
-    "dependencies": [
-      "react-simple-badges"
-    ]
-  }
--->
-
-<!-- markdown-code-runner image-start -->
-
-![rendered jsx](./README.0.png)
-
-<!-- markdown-code-runner image-end -->
 
 [Example project on stackblitz.com](https://stackblitz.com/edit/react-ts-jdouze?file=package.json,App.tsx,style.css,index.tsx)
 
@@ -79,7 +59,3 @@ eg. "#ffb900"
 ### `<Badge backgroundColor="" />` optional : string : hex color
 Replaces the color of the background of the badge
 eg. "#00e1ff"
-
-## most popular badges
-
-![most popular badges graph](https://us-central1-business-primary-color.cloudfunctions.net/graph)

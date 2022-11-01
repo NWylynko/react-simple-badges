@@ -1,8 +1,0 @@
-
-import React from "react"
-import { Badge } from "../badge.js"
-import type { BadgeProps } from "../badge.js"
-
-const Minecraft = (props: BadgeProps) => <Badge name="Minecraft" backgroundColor="#62B47A" {...props} />
-
-export default Minecraft

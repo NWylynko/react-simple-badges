@@ -11,10 +11,11 @@ jobs:
       - uses: actions/checkout@master
       - uses: actions/setup-node@master
         with:
-          node-version: 16.13.2
+          node-version: 18.12.0
 
       - run: yarn fetchColours
-      - run: yarn generateBadges
+
+      - run: yarn bumpp patch -y
 
       - uses: EndBug/add-and-commit@v4
         with:

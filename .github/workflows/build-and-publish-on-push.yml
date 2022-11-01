@@ -10,11 +10,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
-      # - uses: nwylynko/markdown-add-files@master
-      # - uses: nwylynko/markdown-code-runner@master
+
       - uses: actions/setup-node@master
         with:
-          node-version: 16.13.2
+          node-version: 18.12.0
       - run: yarn install
       - run: yarn build
       # - run: yarn test

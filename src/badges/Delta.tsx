@@ -1,8 +1,0 @@
-
-import React from "react"
-import { Badge } from "../badge.js"
-import type { BadgeProps } from "../badge.js"
-
-const Delta = (props: BadgeProps) => <Badge name="Delta" backgroundColor="#003366" {...props} />
-
-export default Delta

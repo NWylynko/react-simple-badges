@@ -5,7 +5,7 @@ const url =
   "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/_data/simple-icons.json";
 
 const localFile = "icons.json";
-const iconsPath = "../icons.json";
+const iconsPath = "../src/icons.ts";
 
 interface BaseIcon {
   icons: Icon[];
@@ -53,8 +53,14 @@ async function saveData(newData: Icon[]): Promise<void> {
       hex: `#${hex}`
     }))
 
-  await fs.writeFile(localFile, JSON.stringify(dataObject));
-  await fs.writeFile(iconsPath, JSON.stringify(dataObject));
+  const iconsString = JSON.stringify(dataObject)
+
+  await fs.writeFile(localFile, iconsString);
+  await fs.writeFile(iconsPath, `
+export const icons = ${iconsString} as const
+export type Icons = typeof icons
+export type IconNames = Icons[number]["label"]
+`);
 }
 
 function Equal(object1: Icon[], object2: Icon[]) {

@@ -1,47 +1,45 @@
 {
   "name": "react-simple-badges",
-  "type": "module",
-  "version": "3.1.0-beta.11",
   "description": "React badges for your Profile and Projects.",
+  "version": "3.1.0-beta.11",
+  "type": "module",
+  "source": "./src/index.ts",
+  "exports": {
+    "require": "./dist/index.cjs",
+    "default": "./dist/index.modern.js"
+  },
+  "main": "./dist/index.cjs",
+  "umd:main": "./dist/index.umd.js",
+  "module": "./dist/index.module.js",
+  "unpkg": "./dist/index.umd.js",
+  "types": "./dist/index.d.ts",
   "author": "NWylynko",
   "license": "MIT",
   "repository": "NWylynko/react-simple-badges",
-  "exports": {
-    "./dist/badges/*": {
-      "types": "./dist/badges/*.d.ts",
-      "default": "./dist/badges/*.js"
-    },
-    "./package.json": "./package.json"
-  },
   "sideEffects": false,
   "engines": {
-    "node": ">=14"
+    "node": ">=16"
   },
   "scripts": {
-    "build": "tsc",
-    "dev": "tsc -w",
+    "build": "microbundle --jsx React.createElement --jsxFragment React.Fragment --jsxImportSource react",
+    "dev": "microbundle --watch --jsx React.createElement --jsxFragment React.Fragment --jsxImportSource react",
     "release": "bumpp --commit --push --tag",
-    "fetchColours": "cd fetchColours && yarn install && yarn build && yarn start",
-    "generateBadges": "cd generateBadges && yarn install && yarn build && yarn start"
+    "fetchColours": "cd fetchColours && yarn install && yarn build && yarn start"
   },
   "peerDependencies": {
-    "react": ">16.0.0"
+    "react": ">18.2.0"
   },
   "devDependencies": {
-    "@types/node": "^17.0.23",
-    "@types/react": "^17.0.43",
-    "@types/react-dom": "^17.0.14",
+    "@types/react": "^18.0.24",
+    "@types/react-dom": "^18.0.8",
     "bumpp": "^8.2.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-scripts": "^5.0.0",
-    "typescript": "^4.8.4",
-    "npm-run-all": "^4.1.5"
+    "microbundle": "^0.15.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^4.8.4"
   },
   "files": [
-    "dist",
-    "empty.d.ts"
+    "dist"
   ],
-  "dependencies": {},
-  "types": "./empty.d.ts"
+  "dependencies": {}
 }
