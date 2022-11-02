@@ -1,3 +1,4 @@
+import "server-only";
 import React from "react"
 import type { ClassAttributes, ImgHTMLAttributes } from "react"
 import { isHex } from "./isHex"
