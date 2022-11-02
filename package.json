@@ -43,5 +43,14 @@
   ],
   "dependencies": {
     "server-only": "^0.0.1"
-  }
+  },
+  "keywords": [
+    "react",
+    
+    "icons",
+    "badges",
+    "server-component",
+    "simple",
+    "next"
+  ]
 }
