@@ -15,7 +15,7 @@ jobs:
 
       - run: yarn fetchColours
 
-      - run: yarn bumpp patch -y
+      - run: npx bumpp@8.2.1 patch -y
 
       - uses: EndBug/add-and-commit@v4
         with:
