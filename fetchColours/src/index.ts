@@ -1,43 +1,54 @@
 import axios from "axios";
 import { promises as fs } from "fs";
+import { z } from "zod";
 
-const url =
-  "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/_data/simple-icons.json";
+const url = "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/_data/simple-icons.json";
 
 const localFile = "icons.json";
 const iconsPath = "../src/icons.ts";
 
-interface BaseIcon {
-  icons: Icon[];
-}
+const remoteFileSchema = z.object({
+  icons: z.array(
+    z.object({
+      title: z.string(),
+      hex: z.string(),
+    })
+  )
+})
 
-interface Icon {
-  [key: string]: string;
-  title: string;
-  hex: string;
-  source: string;
-  guidelines: string;
-}
+const localFileSchema = z.array(
+  z.object({
+    name: z.string(),
+    label: z.string(),
+    hex: z.string(),
+  })
+)
+
+type RemoteIconObj = z.infer<typeof remoteFileSchema>["icons"][number]
+type LocalIconObj = z.infer<typeof localFileSchema>[number]
 
 (async () => {
   try {
-    const { data: { icons: newJson } } = await axios.get<BaseIcon>(url);
+    const { data: result } = await axios.get<unknown>(url);
+    const newJson = (await remoteFileSchema.parseAsync(result)).icons;
+    const newIcons = transformData(newJson);
 
     try {
-      const oldJson: Icon[] = JSON.parse(await fs.readFile(localFile, "utf-8"));
+      const oldFile: unknown = JSON.parse(await fs.readFile(localFile, "utf-8"));
+      const oldJson = await localFileSchema.parseAsync(oldFile);
 
-      if (Equal(oldJson, newJson)) {
+      if (Equal(oldJson, newIcons)) {
         // exit if the file hasn't changed
         console.log("file hasn't changed");
         process.exit(1);
       } else {
         // write the new file for later and continue
         console.log("file has changed");
-        await saveData(newJson);
+        await saveData(newIcons);
       }
     } catch (error) {
       // if there is an error with the old file just replace it and continue
-      await saveData(newJson);
+      await saveData(newIcons);
       throw new Error(`couldn't read old data json file: ${error}`);
     }
   } catch (error) {
@@ -45,15 +56,18 @@ interface Icon {
   }
 })();
 
-async function saveData(newData: Icon[]): Promise<void> {
-  const dataObject = removeDuplicates(newData, "title")
-    .map(({ title, hex }) => ({
-      name: cleanTitle(title),
-      label: title,
-      hex: `#${hex}`
-    }))
+function transformData(data: RemoteIconObj[]): LocalIconObj[] {
+  return removeDuplicates(data, "title").map((icon) => {
+    return {
+      name: cleanTitle(icon.title),
+      label: icon.title,
+      hex: `#${icon.hex}`,
+    };
+  });
+}
 
-  const iconsString = JSON.stringify(dataObject)
+async function saveData(newData: LocalIconObj[]): Promise<void> {
+  const iconsString = JSON.stringify(newData)
 
   await fs.writeFile(localFile, iconsString);
   await fs.writeFile(iconsPath, `
@@ -63,9 +77,8 @@ export type IconNames = Icons[number]["label"]
 `);
 }
 
-function Equal(object1: Icon[], object2: Icon[]) {
-  return false
-  // return JSON.stringify(object1) === JSON.stringify(object2);
+function Equal<Obj extends object>(object1: Obj, object2: Obj): boolean {
+  return JSON.stringify(object1) === JSON.stringify(object2);
 }
 
 const cleanTitle = (dirtyTitle: string): string => {
@@ -98,7 +111,7 @@ const convertNumbersToWords = (title: string): string => {
   return title;
 }
 
-const removeDuplicates = (array: Icon[], key: string) => {
+const removeDuplicates = <ArrayItem extends object>(array: ArrayItem[], key: keyof ArrayItem) => {
   return array.filter((obj, pos, arr) => {
     return arr.map(mapObj => mapObj[key]).indexOf(obj[key]) === pos;
   });
