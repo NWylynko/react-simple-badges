@@ -11,11 +11,11 @@ jobs:
       - uses: actions/checkout@master
       - uses: actions/setup-node@master
         with:
-          node-version: 18.12.0
+          node-version: 18.15.0
 
-      - run: yarn fetchColours
+      - run: pnpm fetchColours
 
-      - run: npx bumpp@8.2.1 patch -y
+      - run: npx bumpp@9.0.0 patch -y
 
       - uses: EndBug/add-and-commit@v4
         with:

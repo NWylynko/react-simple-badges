@@ -24,25 +24,26 @@
     "build": "microbundle --jsx React.createElement --jsxFragment React.Fragment --jsxImportSource react",
     "dev": "microbundle --watch --jsx React.createElement --jsxFragment React.Fragment --jsxImportSource react",
     "release": "bumpp --commit --push --tag",
-    "fetchColours": "cd fetchColours && yarn install && yarn build && yarn start"
+    "fetchColours": "cd fetchColours && pnpm install && pnpm build && pnpm start"
   },
-  "peerDependencies": {
-    "react": ">=18.2.0"
-  },
-  "devDependencies": {
-    "@types/react": "^18.0.24",
-    "@types/react-dom": "^18.0.8",
-    "bumpp": "^8.2.1",
-    "microbundle": "^0.15.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "typescript": "^4.8.4"
-  },
+  "packageManager": "pnpm@7.27.1",
   "files": [
     "dist"
   ],
+  "peerDependencies": {
+    "react": ">=18.2.0"
+  },
   "dependencies": {
     "server-only": "^0.0.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "bumpp": "^9.0.0",
+    "microbundle": "^0.15.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^4.9.5"
   },
   "keywords": [
     "react",

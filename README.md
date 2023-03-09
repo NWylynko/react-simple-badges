@@ -11,6 +11,10 @@ React badges for your Profile and Projects.
 ## Install
 
 ```bash
+pnpm add react-simple-badges
+```
+
+```bash
 npm i react-simple-badges
 ```
 
