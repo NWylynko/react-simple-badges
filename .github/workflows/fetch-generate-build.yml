@@ -20,12 +20,13 @@ jobs:
       - run: git config user.email "nick@wylynko.com"
       - run: git config user.name "Nick Wylynko Bot"
 
-      - run: npx bumpp@9.0.0 patch -y --no-push
+      # - run: npx bumpp@9.0.0 patch -y --no-push
+      - run: npx bumpp@9.0.0 patch -y
 
-      - uses: EndBug/add-and-commit@v4
-        with:
-          author_name: Nick Wylynko Bot
-          author_email: nick@wylynko.com
-          message: 'Updated badges json'
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      # - uses: EndBug/add-and-commit@v4
+      #   with:
+      #     author_name: Nick Wylynko Bot
+      #     author_email: nick@wylynko.com
+      #     message: 'Updated badges json'
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
