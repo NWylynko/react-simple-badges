@@ -13,6 +13,7 @@ jobs:
       - uses: actions/setup-node@master
         with:
           node-version: 18.15.0
+      - uses: pnpm/action-setup@v2
 
       - run: pnpm fetchColours
 
