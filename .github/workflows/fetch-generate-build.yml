@@ -20,6 +20,9 @@ jobs:
       - run: git config user.email "nick@wylynko.com"
       - run: git config user.name "Nick Wylynko Bot"
 
+      - run: git add .
+      - run: git commit -m "Update Icons File"
+
       # - run: npx bumpp@9.0.0 patch -y --no-push
       - run: npx bumpp@9.0.0 patch -y
 
