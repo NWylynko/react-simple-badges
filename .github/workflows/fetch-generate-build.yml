@@ -25,6 +25,8 @@ jobs:
 
       # - run: npx bumpp@9.0.0 patch -y --no-push
       - run: npx bumpp@9.0.0 patch -y
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
 
       # - uses: EndBug/add-and-commit@v4
       #   with:
